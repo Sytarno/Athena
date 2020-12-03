@@ -206,6 +206,64 @@ class VoiceCMD(commands.Cog):
         else:
             await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author}, I could not find the specified role.'))
 
+    @commands.command(name="pRemove")
+    async def _removeRole(self, ctx, msg=1):
+        print(ctx.guild.roles)
+        
+        #<Role id=651289869502382091 name='𝙺𝚒𝚗𝚐👑'>
+        user= ctx.message.author
+        role = (discord.utils.get(user.guild.roles, id=msg))
+        if(role) and msg != 1:
+            try:   
+                await ctx.author.remove_roles(role)
+                await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author}, **{role}** was removed from you.'))
+            except:
+                await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author}, I do not have the permissions to remove **{role}**.'))
+        else:
+            await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author}, I could not find the specified role.'))
+    
+    @commands.command(name="pColor")
+    async def _changeColor(self, ctx, msg=""):
+        user = ctx.message.author
+        role = discord.utils.get(user.guild.roles, name=msg)
+
+        def check(author):
+            def inner_check(message):
+                return message.author == author
+            return inner_check
+
+        if(role):
+            height = role.position
+            if(role.position < user.top_role.position):
+                await ctx.send(embed=generateEmbed(ctx, '', f'**{role}** is currently below your top role.\nWould you like me to attempt to move it? (y/n)'))
+                msg = await bot.wait_for('message', check=check(ctx.author), timeout=30)
+                if(msg.content == 'y' or msg.content == 'Y'):
+                    try:
+                        await role.edit(position = user.top_role.position + 2)
+                        await ctx.send(embed=generateEmbed(ctx, '', f'Successfully elevated **{role}**'))
+                    except:
+                        await ctx.send(embed=generateEmbed(ctx, '', f'Failed to elevate that role.'))
+        
+            if(role):
+                await ctx.send(embed=generateEmbed(ctx, '', f'Would you like to modify the role **{role}**? (y/n)'))
+                msg = await bot.wait_for('message', check=check(ctx.author), timeout=30)
+                if(msg.content == 'y' or msg.content == 'Y'):
+                    await ctx.send(embed=generateEmbed(ctx, '', f'Please state the rgb value you would like to change it to.'))
+                    color = await bot.wait_for('message', check=check(ctx.author), timeout=30)
+                    colorT = tuple(map(int, color.content.split(', '))) 
+                    print(colorT)
+                    if(colorT):
+                        await role.edit(colour = discord.Colour.from_rgb(colorT[0], colorT[1], colorT[2]))
+                        await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author} changed the color of **{role}** to **({colorT[0]}, {colorT[1]}, {colorT[2]})**'))
+                    
+                if(msg == 'n' or msg == 'N'):
+                    await ctx.send(embed=generateEmbed(ctx, '', f'Canceled.'))
+            else:
+                await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author}, I could not find the specified role.'))
+        else:
+            if(msg == ''):
+                await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author}, you must specify a role'))
+
     @commands.command(name="pCopy")
     async def _copy(self, ctx, msg, arg=1):
         for x in range(0, arg):
