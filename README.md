@@ -1,5 +1,5 @@
 # Athena
-Discord bot made by me, Sytarno#8065
+Discord bot made by me, Sytarno#8065 / Evan Nguyen
 
 This bot will not run on its own. .env.txt is a missing file that contains the token and other private info I will not divulge.
 
