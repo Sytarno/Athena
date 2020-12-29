@@ -190,11 +190,12 @@ class VoiceCMD(commands.Cog):
         return ctx.author.id == AUTHOR
         #return True
 
+    
+
     @commands.command(name="pGrant")
     async def _giveRole(self, ctx, msg=1):
         print(ctx.guild.roles)
         
-        #<Role id=651289869502382091 name='𝙺𝚒𝚗𝚐👑'>
         user= ctx.message.author
         role = (discord.utils.get(user.guild.roles, id=msg))
         if(role) and msg != 1:
@@ -210,7 +211,6 @@ class VoiceCMD(commands.Cog):
     async def _removeRole(self, ctx, msg=1):
         print(ctx.guild.roles)
         
-        #<Role id=651289869502382091 name='𝙺𝚒𝚗𝚐👑'>
         user= ctx.message.author
         role = (discord.utils.get(user.guild.roles, id=msg))
         if(role) and msg != 1:

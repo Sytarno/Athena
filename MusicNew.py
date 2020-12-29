@@ -1,4 +1,7 @@
 '''Name: MusicNew Module
+Player module used by the main bot. Uses lavalink that can be found here:
+https://github.com/Frederikam/Lavalink/releases/
+
 Author: Evan Nguyen'''
 
 import discord

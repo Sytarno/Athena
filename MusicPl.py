@@ -1,3 +1,8 @@
+'''Name: MusicPl Module
+Deprecated and unused music playing module. Uses ffmpeg and ytdl.
+
+Author: Evan Nguyen'''
+
 import discord
 from discord.ext import commands
 
