@@ -265,9 +265,18 @@ class VoiceCMD(commands.Cog):
                 await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author}, you must specify a role'))
 
     @commands.command(name="pCopy")
-    async def _copy(self, ctx, msg, arg=1):
-        for x in range(0, arg):
-            await ctx.send(f'{msg}')
+    async def _copy(self, ctx, *msg):
+        args = list(msg)
+        try:
+            count = int(args[0])
+            args.pop(0)
+
+            m = ' '.join(map(str, args))
+
+            for x in range(0, count):
+                await ctx.send(f'{m}')
+        except:
+            await ctx.send(embed=generateEmbed(ctx, '', 'Invalid arguments. Count expected as first argument'))
 
     @commands.command(name="pID")
     async def _getId(self, ctx, arg=1):
