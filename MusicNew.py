@@ -238,6 +238,12 @@ class Music(commands.Cog):
         if await self.userConnectedCheck(ctx) and await self.playerConnectedCheck(ctx) and arg > 0:
             await ctx.send(embed=generateEmbed(ctx, '', f'{player.queue.pop(arg-1)} at index **{arg}** was removed from the queue. [{ctx.author.mention}]')) 
 
+    @commands.command(name='clear', aliases = ["c"])
+    async def _remove(self, ctx, arg=0):
+        player = self.bot.wavelink.get_player(ctx.guild.id, cls=NewPlayer)
+        if await self.userConnectedCheck(ctx) and await self.playerConnectedCheck(ctx) and arg > 0:
+            await ctx.send(embed=generateEmbed(ctx, '', f'{player.queue.pop(arg-1)} at index **{arg}** was removed from the queue. [{ctx.author.mention}]')) 
+
     @commands.command(name='skip', aliases = ["s"])
     async def _skip(self, ctx):
         player = self.bot.wavelink.get_player(ctx.guild.id, cls=NewPlayer)
@@ -306,7 +312,7 @@ class Music(commands.Cog):
         e.add_field(name = '**Rate**', value = f'The current global rate is **{round(GLOBAL_RATE, 5)}**, or *{round(GLOBAL_RATE*60, 5)}* requests per minute. Exceeding this will force the player to sleep.')
         await ctx.send(embed=e)
 
-    @commands.command(name='current', aliases = ["c"])
+    @commands.command(name='now playing', aliases = ["np"])
     async def _currentCheck(self, ctx):
         player = self.bot.wavelink.get_player(ctx.guild.id, cls=NewPlayer)
         if await self.userConnectedCheck(ctx) and await self.playerConnectedCheck(ctx):

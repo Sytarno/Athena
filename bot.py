@@ -72,6 +72,7 @@ class AthenaCore(commands.Cog):
 
 
 
+    
      
     @commands.command(name="status")
     async def _statusCheck(self, ctx):
@@ -438,5 +439,8 @@ bot.add_cog(MudaeHelper(bot))
 
 from MusicNew import *
 bot.add_cog(Music(bot))
+
+from recognition import *
+bot.add_cog(NLP(bot))
 
 bot.run(TOKEN)
