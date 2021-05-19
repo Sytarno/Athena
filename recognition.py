@@ -1,4 +1,4 @@
-from nltk.stem import PorterStemmer, WordNetLemmatizer
+from nltk.stem import LancasterStemmer, PorterStemmer, WordNetLemmatizer
 from nltk.corpus import wordnet, stopwords
 from nltk import word_tokenize
 
@@ -18,17 +18,16 @@ def read(path):
         return in_file.read().split('\n')
 
 import nltk
-nltk.download('tagsets')
-nltk.help.upenn_tagset()
+
 #nltk.download('stopwords')
 #nltk.download('averaged_perceptron_tagger')
 
 stop_words = set(stopwords.words('english'))
-lemmatizer = WordNetLemmatizer()
-stemmer = PorterStemmer()
+ps = PorterStemmer()
 
 def tokenize(sentence):
-    tokens = word_tokenize(sentence)
+    stem = ps.stem(sentence)
+    tokens = word_tokenize(stem)
     clean_tokens = [w for w in tokens if not w in stop_words]
     tagged = nltk.pos_tag(clean_tokens)
 
@@ -44,7 +43,7 @@ class NLP(commands.Cog):
         if validChannel(message.channel) and message.guild and not message.author.bot:
             name = message.guild.get_member(353029839860662274).display_name.lower()
 
-            if name in message.content.lower():
+            if re.search(r'\b' + name + r'\b', message.content):
                 await message.channel.send(tokenize(message.content))
 
 
