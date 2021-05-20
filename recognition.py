@@ -6,6 +6,7 @@ import discord
 import os
 import re
 
+from itertools import product
 from discord.ext import commands
 from discord.utils import get
 
@@ -21,6 +22,16 @@ import nltk
 
 #nltk.download('stopwords')
 #nltk.download('averaged_perceptron_tagger')
+
+class Node:
+    def __init__(self):
+        aa = 1
+
+#--------------------------------------------------------------build graph
+        
+
+#------------------------------------------------------------------
+
 
 stop_words = set(stopwords.words('english'))
 ps = PorterStemmer()
@@ -44,6 +55,11 @@ class NLP(commands.Cog):
             name = message.guild.get_member(353029839860662274).display_name.lower()
 
             if re.search(r'\b' + name + r'\b', message.content):
-                await message.channel.send(tokenize(message.content))
+                ctx = await self.bot.get_context(message)
+                tk = tokenize(message.content)
 
+                await message.channel.send(tk)
+
+    async def response_hello(self, ctx, message=""):
+        await ctx.send("hello!")
 
