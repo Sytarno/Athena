@@ -98,9 +98,15 @@ class NLP(commands.Cog):
             pass
         
         return cmd
+
+#---------------------------------------------------
+
         
     async def response_hello(self, ctx, message=""):
         await ctx.send("hello!")
+
+#---------------------------------------------------
+
 
     @commands.Cog.listener()
     async def on_message(self, message):
