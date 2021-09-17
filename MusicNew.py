@@ -4,6 +4,24 @@ https://github.com/Frederikam/Lavalink/releases/
 
 Author: Evan Nguyen'''
 
+'''
+ytsearch: [search YouTube]
+ytmsearch: [search YouTube Music]
+scsearch: [Search SoundCloud]
+
+URL only:
+[Bandcamp]
+[Getyarn]
+[Nico]
+[Twitch]
+[Vimeo]
+
+Other:
+[Http]
+[Stream]
+[Local]
+'''
+
 import discord
 from discord.ext import commands
 
@@ -53,6 +71,7 @@ class NewPlayer(wavelink.player.Player):
 
         self.mode = 'ytsearch'
         self.filter = 'flat'
+        self.validModes = {'default': 'ytsearch', 'youtube' : 'ytsearch', 'soundcloud': 'scsearch', 'url': ''}
         self.filters = {'flat': wavelink.eqs.Equalizer.flat(), 'metal': wavelink.eqs.Equalizer.metal(), 'boost': wavelink.eqs.Equalizer.boost(), 'piano': wavelink.eqs.Equalizer.piano()}
         
         self.avgUse = throttle_dict.get(str(guild_id))
@@ -103,7 +122,7 @@ class Music(commands.Cog):
         self.desc = "Revamped music player using lavalink + wavelink."
 
         if not hasattr(bot, 'wavelink'):
-            self.bot.wavelink = wavelink.Client(self.bot)
+            self.bot.wavelink = wavelink.Client(bot=self.bot)
 
         self.bot.loop.create_task(self.start_nodes())
 
@@ -138,7 +157,28 @@ class Music(commands.Cog):
             await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author.mention}, you are not in a voice channel.'))
             return False
 
+    async def acquire_tracks(self, player):
+        tracks = None
+        
+        query = player.queue.pop(0)
+        regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
+        url = re.findall(regex, query)  
 
+        
+        if(query == url) or (player.mode == ""):
+            tracks = await self.bot.wavelink.get_tracks(f'{query}')
+        else:
+            tracks = await self.bot.wavelink.get_tracks(f'{player.mode}:{query}')
+        '''
+        if player.mode == 'scsearch':
+            tracks = await self.bot.wavelink.SoundCloudTrack.search(query)
+        if player.mode == 'ytsearch':
+            tracks = await self.bot.wavelink.YouTubeTrack.search(query)
+        if player.mode == '':
+            tracks = await self.bot.wavelink.SearchableTrack.search(query)
+        '''
+        player.updateAvg(1)
+        return tracks, query
 
     @commands.command(name='connect', aliases=["join", "summon"])
     async def _connect(self, ctx, *, channel: discord.VoiceChannel=None):
@@ -155,7 +195,7 @@ class Music(commands.Cog):
             player.text_channel = ctx.channel
             await player.connect(channel.id)
 
-    @commands.command(name='stop', aliases=["dc"])
+    @commands.command(name='stop', aliases=["dc", "leave"])
     async def _disconnect(self, ctx, *, channel: discord.VoiceChannel=None):
         player = self.bot.wavelink.get_player(ctx.guild.id, cls=NewPlayer)
         if player.queue:
@@ -191,16 +231,7 @@ class Music(commands.Cog):
             tracks = None
 
             while tracks == None:
-                query = player.queue.pop(0)
-                regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
-                url = re.findall(regex, query)  
-
-                if(query == url):
-                    tracks = await self.bot.wavelink.get_tracks(f'{query}')
-                else:
-                    tracks = await self.bot.wavelink.get_tracks(f'{player.mode}:{query}')
-                    
-                player.updateAvg(1)
+                tracks, query = await self.acquire_tracks(player)
 
                 if not tracks:
                     return await player.send(embed=generateEmbed(ctx, '', f"Could not find any songs with the query '*{query}*'. Skipping."))
@@ -209,12 +240,25 @@ class Music(commands.Cog):
             player.current = tracks[0]
             await player.play(player.current)
 
-    @commands.command(name='mode', aliases = ["m"])
+    @commands.command(name='mode', aliases = ["m"], description="Available modes:\n" +
+                                                                "default (youtube)\n" +
+                                                                "youtube\n" +
+                                                                "soundcloud\n" +
+                                                                "url: This supports:\n" +
+                                                                "[Bandcamp]\n" +
+                                                                "[Getyarn]\n" +
+                                                                "[Nico]\n" +
+                                                                "[Twitch]\n" +
+                                                                "[Vimeo]\n")
     async def _mode(self, ctx, arg='ytsearch'):
         player = self.bot.wavelink.get_player(ctx.guild.id, cls=NewPlayer)
-        if await self.userConnectedCheck(ctx) and await self.playerConnectedCheck(ctx) and arg != 'ytsearch':
-            player.mode = arg
-            await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author.mention} changed the mode to **{arg}**.'))
+        if await self.userConnectedCheck(ctx) and await self.playerConnectedCheck(ctx):
+            if arg in player.validModes.keys():
+                player.mode = player.validModes[arg]
+                await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author.mention} changed the mode to **{player.validModes[arg]}**.'))
+            else:
+                await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author.mention}, that is not a valid search parameter. Use "help mode" to see available modes.'))
+            
           
     @commands.command(name='queue', aliases = ["q"])
     async def _queue(self, ctx):
@@ -239,10 +283,11 @@ class Music(commands.Cog):
             await ctx.send(embed=generateEmbed(ctx, '', f'{player.queue.pop(arg-1)} at index **{arg}** was removed from the queue. [{ctx.author.mention}]')) 
 
     @commands.command(name='clear', aliases = ["c"])
-    async def _remove(self, ctx, arg=0):
+    async def _remove(self, ctx):
         player = self.bot.wavelink.get_player(ctx.guild.id, cls=NewPlayer)
-        if await self.userConnectedCheck(ctx) and await self.playerConnectedCheck(ctx) and arg > 0:
-            await ctx.send(embed=generateEmbed(ctx, '', f'{player.queue.pop(arg-1)} at index **{arg}** was removed from the queue. [{ctx.author.mention}]')) 
+        if await self.userConnectedCheck(ctx) and await self.playerConnectedCheck(ctx):
+            player.queue = []
+            await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author.mention} cleared the queue')) 
 
     @commands.command(name='skip', aliases = ["s"])
     async def _skip(self, ctx):
@@ -384,7 +429,7 @@ class Music(commands.Cog):
 
         c = [(1, a), (2, b), (3, c), (4, d), (5, e), (6, f), (7, g), (8, h), (9, i), (10, j), (11, k), (12, l), (13, m), (14, n), (15, o)]
         
-        player.filters['custom'] = wavelink.eqs.Equalizer(c)
+        player.filters['custom'] = wavelink.eqs.Equalizer(levels=c)
 
         await player.set_eq(player.filters[player.filter])
         msg = await ctx.send(embed=generateEmbed(ctx, '', f'Changing filter to **custom**...'))
@@ -393,7 +438,7 @@ class Music(commands.Cog):
         await msg.edit(embed=generateEmbed(ctx, '', f'{ctx.author.mention} installed a custom filter. View it using view_eq.'))
         
     
-    async def send_song_info(self, player: NewPlayer, track: wavelink.player.Track):
+    async def send_song_info(self, player: NewPlayer, track: wavelink.Track):
         await player.send(embed=discord.Embed(description = '**Currently playing:**\n' + f'```css\n{track.title}\n```',
                                                   colour = 1973790))
     
@@ -418,13 +463,10 @@ class Music(commands.Cog):
                 tracks = None
 
                 while tracks == None:
-                    query = player.queue.pop(0)
-                    tracks = await self.bot.wavelink.get_tracks(f'{player.mode}:{query}')
-                    player.updateAvg(1)
+                    tracks, query = await self.acquire_tracks(player)
 
                     if not tracks:
-                        return await player.send(embed=discord.Embed(description = f"Could not find any songs with the query '*{query}*'. Skipping.",
-                                                                     colour = 1973790))
+                        return await player.send(embed=discord.Embed(description=f"Could not find any songs with the query '*{query}*'. Skipping."))
                         pass
                 
                 player.current = tracks[0]

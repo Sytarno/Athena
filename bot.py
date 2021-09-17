@@ -12,11 +12,9 @@ import numpy
 import math
 import random
 
-import youtube_dl
 import asyncio
 import wavelink
-from wavelink.events import *
-from wavelink.eqs import Equalizer
+'''from wavelink.eqs import Equalizer'''
 
 import re
 
