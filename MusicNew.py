@@ -283,7 +283,7 @@ class Music(commands.Cog):
             await ctx.send(embed=generateEmbed(ctx, '', f'{player.queue.pop(arg-1)} at index **{arg}** was removed from the queue. [{ctx.author.mention}]')) 
 
     @commands.command(name='clear', aliases = ["c"])
-    async def _remove(self, ctx):
+    async def _clear(self, ctx):
         player = self.bot.wavelink.get_player(ctx.guild.id, cls=NewPlayer)
         if await self.userConnectedCheck(ctx) and await self.playerConnectedCheck(ctx):
             player.queue = []
