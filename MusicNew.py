@@ -34,6 +34,7 @@ import json
 import time
 import asyncio
 import re
+import socket
 
 
 global GLOBAL_RATE
@@ -131,13 +132,17 @@ class Music(commands.Cog):
 
         # Initiate our nodes. For this example we will use one server.
         # Region should be a discord.py guild.region e.g sydney or us_central (Though this is not technically required)
-        await self.bot.wavelink.initiate_node(host='10.0.0.201',
-                                              port=7777,
-                                              rest_uri='http://10.0.0.201:7777',
+        
+        ip = socket.gethostbyname(socket.gethostname())
+                
+        await self.bot.wavelink.initiate_node(host=f'{ip}',
+                                              port=2333,
+                                              rest_uri=f'http://{ip}:2333',
                                               password='youshallnotpass',
                                               identifier='Athena',
                                               region='us_west')
 
+        print(f'Connected successfully to: {ip}') 
         for node in self.bot.wavelink.nodes.values():
             node.set_hook(self.on_node_event)
 
@@ -348,6 +353,19 @@ class Music(commands.Cog):
             await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author.mention} set the volume to **{arg}%**\n' +
                                                f'[{highlight}](https://www.youtube.com/watch?v=dQw4w9WgXcQ){nonhighlight}'))
 
+    @commands.command(name='seek')
+    async def _seek(self, ctx, arg=0):
+        player = self.bot.wavelink.get_player(ctx.guild.id, cls=NewPlayer)
+        if await self.userConnectedCheck(ctx) and await self.playerConnectedCheck(ctx):
+            def timeGet(secs):
+                return f'{int(secs/60)}m {int(secs%60)}s'
+
+            if(arg > (player.current.length / 1000)):
+                await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author.mention}, that is beyond the length of the track.'))
+            else:
+                await player.seek(arg*1000)
+                await ctx.send(embed=generateEmbed(ctx, '', f'Seeked to **{timeGet(arg)}** {ctx.author.mention}'))
+        
     @commands.command(name='reqs')
     async def _requestCheck(self, ctx):
         player = self.bot.wavelink.get_player(ctx.guild.id, cls=NewPlayer)
@@ -372,7 +390,8 @@ class Music(commands.Cog):
                                                 colour = 1973790)
 
             FULL = "───────────────────────────────────────"
-            secIn = time.time() - player.playTime
+            #secIn = time.time() - player.playTime
+            secIn = player.position / 1000
             secLen = player.current.length / 1000
             cur = int(len(FULL) * secIn / secLen)
             

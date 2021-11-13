@@ -222,10 +222,11 @@ class VoiceCMD(commands.Cog):
             await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author}, I could not find the specified role.'))
     
     @commands.command(name="pColor")
-    async def _changeColor(self, ctx, msg=""):
+    async def _changeColor(self, ctx, *msg):
         user = ctx.message.author
-        role = discord.utils.get(user.guild.roles, name=msg)
-
+        s = ' '.join(msg)
+        role = discord.utils.get(user.guild.roles, name=s)
+        print(s)
         def check(author):
             def inner_check(message):
                 return message.author == author
@@ -247,7 +248,7 @@ class VoiceCMD(commands.Cog):
                 await ctx.send(embed=generateEmbed(ctx, '', f'Would you like to modify the role **{role}**? (y/n)'))
                 msg = await bot.wait_for('message', check=check(ctx.author), timeout=30)
                 if(msg.content == 'y' or msg.content == 'Y'):
-                    await ctx.send(embed=generateEmbed(ctx, '', f'Please state the rgb value you would like to change it to.'))
+                    await ctx.send(embed=generateEmbed(ctx, '', f'Please state the r, g, b value you would like to change it to.'))
                     color = await bot.wait_for('message', check=check(ctx.author), timeout=30)
                     colorT = tuple(map(int, color.content.split(', '))) 
                     print(colorT)
