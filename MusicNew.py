@@ -31,6 +31,9 @@ import random
 import wavelink
 import json
 
+import spotipy
+from spotipy.oauth2 import SpotifyClientCredentials
+
 import time
 import asyncio
 import re
@@ -81,6 +84,8 @@ class NewPlayer(wavelink.player.Player):
             
         self.playTime = 0
         self.skips = 0
+        self.sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id="051b9bd0a22f4740bea03b9363ef883a",
+                                                           client_secret="c2cf3efd91e04bdb8b1b3194fcba8b9e"))
 
     async def send(self, content=None, *, embed=None, now_playing=False, delete_np=False, delete_after=None):
         channel = self.text_channel
@@ -218,7 +223,12 @@ class Music(commands.Cog):
         if player.is_playing:        
             await ctx.send(embed=generateEmbed(ctx, '', f"Enqueued the query '*{query}*'. [{ctx.author.mention}]"))
 
-        player.queue.append(query)
+        try:
+            t = player.sp.track(query)
+            player.queue.append(f"{t['artists'][0]['name']} {t['name']}")
+            
+        except:
+            player.queue.append(query)
 
         if not player.is_playing:
             player.updateAvg(0)
