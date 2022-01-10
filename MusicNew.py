@@ -229,31 +229,10 @@ class Music(commands.Cog):
             
         except:
             player.queue.append(query)
+            pass
 
         if not player.is_playing:
-            player.updateAvg(0)
-
-            if player.getAvg() >= GLOBAL_RATE:
-                secs = ((player.getAvg() * 60) / (GLOBAL_RATE * 60)) * 60
-                if(secs >= 60):
-                    out = f'{int(secs/60)}m {int(secs%60)}s'
-                else:
-                    out = f'{int(secs)}s'
-                await player.send(embed=discord.Embed(description = f'Global rate exceeded. Sleeping for {out}.',
-                                                      colour = 1973790))
-                await asyncio.sleep(secs)
-
-            tracks = None
-
-            while tracks == None:
-                tracks, query = await self.acquire_tracks(player)
-
-                if not tracks:
-                    return await player.send(embed=generateEmbed(ctx, '', f"Could not find any songs with the query '*{query}*'. Skipping."))
-                    pass
-            
-            player.current = tracks[0]
-            await player.play(player.current)
+            await self.coroutinePlay(player)
 
     @commands.command(name='mode', aliases = ["m"], description="Available modes:\n" +
                                                                 "default (youtube)\n" +
@@ -470,6 +449,30 @@ class Music(commands.Cog):
     async def send_song_info(self, player: NewPlayer, track: wavelink.Track):
         await player.send(embed=discord.Embed(description = '**Currently playing:**\n' + f'```css\n{track.title}\n```',
                                                   colour = 1973790))
+    async def coroutinePlay(self, player):
+        player.updateAvg(0)
+
+        if player.getAvg() >= GLOBAL_RATE:
+            secs = ((player.getAvg() * 60) / (GLOBAL_RATE * 60)) * 60
+            if(secs >= 60):
+                out = f'{int(secs/60)}m {int(secs%60)}s'
+            else:
+                out = f'{int(secs)}s'
+            await player.send(embed=discord.Embed(description = f'Global rate exceeded. Sleeping for {out}.',
+                                                  colour = 1973790))
+            await asyncio.sleep(secs)
+
+        tracks = None
+
+        while tracks == None:
+            tracks, query = await self.acquire_tracks(player)
+
+            if not tracks:
+                return await player.send(embed=generateEmbed(ctx, '', f"Could not find any songs with the query '*{query}*'. Skipping."))
+                pass
+        
+        player.current = tracks[0]
+        await player.play(player.current)
     
     async def on_node_event(self, event):
         if isinstance(event, wavelink.events.TrackEnd):
@@ -477,29 +480,7 @@ class Music(commands.Cog):
             track = player.current
 
             if len(player.queue) > 0:
-                player.updateAvg(0)
-
-                if player.getAvg() >= GLOBAL_RATE:
-                    secs = ((player.getAvg() * 60) / (GLOBAL_RATE * 60)) * 60
-                    if(secs >= 60):
-                        out = f'{int(secs/60)}m {int(secs%60)}s'
-                    else:
-                        out = f'{int(secs)}s'
-                    await player.send(embed=discord.Embed(description = f'Global rate exceeded. Sleeping for {out}.',
-                                                          colour = 1973790))
-                    await asyncio.sleep(secs)
-
-                tracks = None
-
-                while tracks == None:
-                    tracks, query = await self.acquire_tracks(player)
-
-                    if not tracks:
-                        return await player.send(embed=discord.Embed(description=f"Could not find any songs with the query '*{query}*'. Skipping."))
-                        pass
-                
-                player.current = tracks[0]
-                await player.play(player.current)
+                await self.coroutinePlay(player)
             else:
                 await player.disconnect()
 

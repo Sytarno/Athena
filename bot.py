@@ -442,4 +442,7 @@ bot.add_cog(Music(bot))
 from recognition import *
 bot.add_cog(NLP(bot))
 
+from Exec import *
+bot.add_cog(Exec(bot))
+
 bot.run(TOKEN)
