@@ -139,7 +139,7 @@ class Music(commands.Cog):
         # Region should be a discord.py guild.region e.g sydney or us_central (Though this is not technically required)
         
         #ip = socket.gethostbyname(socket.gethostname())
-        ip = "10.0.0.37"
+        ip = "10.0.0.156"
                 
         await self.bot.wavelink.initiate_node(host=f'{ip}',
                                               port=2333,
