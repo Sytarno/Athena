@@ -1,0 +1,12 @@
+Expected id of type track but found type www.youtube.com https://www.youtube.com/watch?v=-2wdRCCMHK8
+HTTP Error for GET to https://api.spotify.com/v1/tracks/watch with Params: {'market': None} returned 400 due to invalid id
+Expected id of type track but found type www.youtube.com https://www.youtube.com/watch?v=-2wdRCCMHK8
+HTTP Error for GET to https://api.spotify.com/v1/tracks/watch with Params: {'market': None} returned 400 due to invalid id
+Ignoring exception in command None:
+discord.ext.commands.errors.CommandNotFound: Command "removechannel" is not found
+Expected id of type track but found type www.youtube.com https://www.youtube.com/watch?v=cLJf-5tFv4k
+HTTP Error for GET to https://api.spotify.com/v1/tracks/watch with Params: {'market': None} returned 400 due to invalid id
+Expected id of type track but found type www.youtube.com https://www.youtube.com/watch?v=cLJf-5tFv4k
+HTTP Error for GET to https://api.spotify.com/v1/tracks/watch with Params: {'market': None} returned 400 due to invalid id
+Expected id of type track but found type www.youtube.com https://www.youtube.com/watch?v=8If-yEo-ilM
+HTTP Error for GET to https://api.spotify.com/v1/tracks/watch with Params: {'market': None} returned 400 due to invalid id
