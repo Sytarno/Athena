@@ -18,23 +18,26 @@ import wavelink
 
 import re
 
+dPATH = "data/"
+
 bot = commands.Bot(command_prefix = '>?')
-PARSE = open('.env.txt').read().split('\n')
+PARSE = open(dPATH + '.env.txt').read().split('\n')
 TOKEN = PARSE[0]
 AUTHOR = int(PARSE[1])
 SELFID = int(PARSE[2])
 
 botCommands = {}
 
-with open('.authorizedChannels.txt', 'r') as in_file:
+with open(dPATH + '.authorizedChannels.txt', 'r') as in_file:
         authorizedChannels = in_file.read().split('\n')
 
 def validChannel(channel):
-    authorizedChannels = read('.authorizedChannels.txt')
+    authorizedChannels = read(dPATH + '.authorizedChannels.txt')
+    print(authorizedChannels)
     return str(channel.id) in authorizedChannels
 
 def embedChannel(channel):
-    activeEmbedChannels = read('.embedChannels.txt')
+    activeEmbedChannels = read(dPATH + '.embedChannels.txt')
     return str(channel.id) in activeEmbedChannels
 
 
@@ -46,8 +49,8 @@ def write(path, data):
     with open(path, 'w') as out_file:
         out_file.write('\n'.join(data))
 
-authorizedChannels = read('.authorizedChannels.txt')
-activeEmbedChannels = read('.embedChannels.txt')
+authorizedChannels = read(dPATH + '.authorizedChannels.txt')
+activeEmbedChannels = read(dPATH + '.embedChannels.txt')
 
 @bot.event
 async def on_ready():
@@ -90,7 +93,7 @@ class AthenaCore(commands.Cog):
             
             if str(b.channel.id) not in authorizedChannels:
                 authorizedChannels.append(str(b.channel.id))
-                write('.authorizedChannels.txt', authorizedChannels)
+                write(dPATH + '.authorizedChannels.txt', authorizedChannels)
 
                 await b.send(f'Added this channel to {bot.user}')
             else:
@@ -105,7 +108,7 @@ class AthenaCore(commands.Cog):
             
             if validChannel(b.channel):
                 authorizedChannels.remove(str(b.channel.id))
-                write('.authorizedChannels.txt', authorizedChannels)
+                write(dPATH + '.authorizedChannels.txt', authorizedChannels)
 
                 await b.send(f'Removed this channel from {bot.user}')
             else:
@@ -129,7 +132,7 @@ class AthenaCore(commands.Cog):
 
             await b.send(f'Embed conversion is now **off** for this channel.')
 
-        write('.embedChannels.txt', activeEmbedChannels)
+        write(dPATH + '.embedChannels.txt', activeEmbedChannels)
 
     @commands.command(name="downscale")
     async def _distort(self, i, arg=8):
@@ -428,6 +431,8 @@ async def on_message(msg):
 
                 await msg.delete()
                 await msg.channel.send(embed=embed)
+
+
 
 bot.add_cog(AthenaCore(bot))
 bot.add_cog(VoiceCMD(bot))

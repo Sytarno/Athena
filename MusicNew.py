@@ -53,7 +53,9 @@ def generateEmbed(ctx: commands.Context, title, description=""):
     )
     return embed
 
-fm = open('.avgs.txt', 'r')
+dPATH = "data/"
+
+fm = open(dPATH + '.avgs.txt', 'r')
 throttle_dict = json.load(fm)
 fm.close()
 
@@ -469,7 +471,8 @@ class Music(commands.Cog):
             tracks, query = await self.acquire_tracks(player)
 
             if not tracks:
-                return await player.send(embed=generateEmbed(ctx, '', f"Could not find any songs with the query '*{query}*'. Skipping."))
+                return await player.send(embed=discord.Embed(description = f"Could not find any songs with the query '*{query}*'. Skipping.",
+                                                  colour = 1973790))
                 pass
         
         player.current = tracks[0]

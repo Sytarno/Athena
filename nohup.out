@@ -1,0 +1,2135 @@
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    @commands.Cog.listener()
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    @commands.Cog.listener()
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    @commands.Cog.listener()
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    @commands.Cog.listener()
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    @commands.Cog.listener()
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    @commands.Cog.listener()
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 413, in on_message
+    if validChannel(msg.channel) or "channel" in msg.content.lower():
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    @commands.Cog.listener()
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    @commands.Cog.listener()
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    @commands.Cog.listener()
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    @commands.Cog.listener()
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    @commands.Cog.listener()
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    @commands.Cog.listener()
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    @commands.Cog.listener()
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    if validChannel(message.channel) and message.guild and not message.author.bot:
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+    authorizedChannels = read('.authorizedChannels.txt')
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+    with open(path, 'r') as in_file:
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    @commands.Cog.listener()
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    @commands.Cog.listener()
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    @commands.Cog.listener()
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    @commands.Cog.listener()
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    @commands.Cog.listener()
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/Athena/recognition.py", line 113, in on_message
+    @commands.Cog.listener()
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel
+  File "/home/ubuntu/Athena/recognition.py", line 18, in read
+FileNotFoundError: [Errno 2] No such file or directory: '.authorizedChannels.txt'
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "bot.py", line 412, in on_message
+    async def on_message(msg):
+  File "/home/ubuntu/Athena/recognition.py", line 14, in validChannel

@@ -10,8 +10,10 @@ from itertools import product
 from discord.ext import commands
 from discord.utils import get
 
+dPATH = "data/"
+
 def validChannel(channel):
-    authorizedChannels = read('.authorizedChannels.txt')
+    authorizedChannels = read(dPATH + '.authorizedChannels.txt')
     return str(channel.id) in authorizedChannels
 
 def read(path):
