@@ -3,6 +3,7 @@ Author: Evan Nguyen'''
 
 import discord
 import os
+import pickle
 from discord.ext import commands
 from discord.utils import get
 
@@ -52,6 +53,13 @@ def write(path, data):
 authorizedChannels = read(dPATH + '.authorizedChannels.txt')
 activeEmbedChannels = read(dPATH + '.embedChannels.txt')
 
+voicepkl = open(dPATH + '.voiceLock.pkl', "rb")
+try:
+    voiceLocks = pickle.load(voicepkl)
+except:
+    print("Unable to load voiceLock pickle.")
+    voiceLocks = {}
+
 @bot.event
 async def on_ready():
     print(f'{bot.user} is now Online.')
@@ -86,10 +94,43 @@ class AthenaCore(commands.Cog):
                 pass
         await ctx.send(embed=generateEmbed(ctx, f'Athena is currently online with **{len(self.bot.cogs)}** cogs.\n', out))
 
+    @commands.command(name="vcLock")
+    async def _vcLock(self, ctx):
+        if ctx.author.voice.channel:
+            if ctx.guild.id not in voiceLocks.keys(): 
+                voiceLocks[ctx.guild.id] = [ctx.author.voice.channel.id, []]
+                voicepkl = open(dPATH + '.voiceLock.pkl', "wb")
+                pickle.dump(voiceLocks, voicepkl)
+
+                await ctx.send(embed=generateEmbed(ctx, '', f'Attached a listener to **{ctx.author.voice.channel.name}**, {ctx.author.mention}'))
+            else:
+                del voiceLocks[ctx.guild.id]
+                await ctx.send(embed=generateEmbed(ctx, '', f'Successfully removed the listener on **{ctx.author.voice.channel.name}**.'))
+        else:
+            await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author.mention}, you are not connected to a voice channel.'))
+
+    @commands.command(name="delLock")
+    async def _delLock(self, ctx):
+        def check(author):
+            def inner_check(message):
+                return message.author == author
+            return inner_check
+
+        if ctx.guild.id in voiceLocks.keys():
+            await ctx.send(embed=generateEmbed(ctx, f'Are you sure you want to remove the listener?',
+            'Any extra channels that were created will not be automatically destroyed. Respond with (y/Y) to confirm.'))
+            msg = await bot.wait_for('message', check=check(ctx.author), timeout=30)
+            print(msg.content)
+            if(msg.content == 'y' or msg.content == 'Y'):
+                del voiceLocks[ctx.guild.id]
+                await ctx.send(embed=generateEmbed(ctx, '', f'Successfully removed the listener from all channels. Cleanup as necessary.'))
+        else:
+            await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author.mention}, there are no listeners.'))
+
     @commands.command(name="addChannel")
     async def _addChannel(self, b):
         if(b.author.id == AUTHOR):
-            authorizedChannels = read('.authorizedChannels.txt')
+            authorizedChannels = read(dPATH + '.authorizedChannels.txt')
             
             if str(b.channel.id) not in authorizedChannels:
                 authorizedChannels.append(str(b.channel.id))
@@ -97,14 +138,14 @@ class AthenaCore(commands.Cog):
 
                 await b.send(f'Added this channel to {bot.user}')
             else:
-                await b.send(f'This channel has already been added, {b.author}.')
+                await b.send(f'This channel has already been added, {b.author.mention}.')
         else:
-            await b.send(f'You are not authorized to do that, {b.author}.')
+            await b.send(f'You are not authorized to do that, {b.author.mention}.')
 
     @commands.command(name="removeChannel")
     async def _removeChannel(self, b):
         if(b.author.id == AUTHOR):
-            authorizedChannels = read('.authorizedChannels.txt')
+            authorizedChannels = read(dPATH + '.authorizedChannels.txt')
             
             if validChannel(b.channel):
                 authorizedChannels.remove(str(b.channel.id))
@@ -112,9 +153,9 @@ class AthenaCore(commands.Cog):
 
                 await b.send(f'Removed this channel from {bot.user}')
             else:
-                await b.send(f'This channel has been removed already, {b.author}.')
+                await b.send(f'This channel has been removed already, {b.author.mention}.')
         else:
-            await b.send(f'You are not authorized to do that, {b.author}.')
+            await b.send(f'You are not authorized to do that, {b.author.mention}.')
 
     @commands.command(name="ping")
     async def _ping(self, b):
@@ -122,7 +163,7 @@ class AthenaCore(commands.Cog):
 
     @commands.command(name="embedMode")
     async def _toggleEmbed(self, b):
-        activeEmbedChannels = read('.embedChannels.txt')
+        activeEmbedChannels = read(dPATH + '.embedChannels.txt')
         if str(b.channel.id) not in activeEmbedChannels:
             activeEmbedChannels.append(str(b.channel.id))
 
@@ -432,7 +473,49 @@ async def on_message(msg):
                 await msg.delete()
                 await msg.channel.send(embed=embed)
 
+#--VOICE STATE READER--------------------------------------------------
 
+async def moveRoutine(member, guild, origChannel):
+    try:
+        if(member.nick):
+            nameStr = f"{member.nick}" + "'s room"
+        else:
+            nameStr = member.name + "'s room"
+
+        made = await origChannel.clone(name=nameStr)
+        voiceLocks[guild.id][1].append(made.id)
+        voicepkl = open(dPATH + '.voiceLock.pkl', "wb")
+        pickle.dump(voiceLocks, voicepkl)
+
+        await member.move_to(made)
+    except:
+        pass
+
+userQueue = []
+
+@bot.event
+async def on_voice_state_update(member, before, after):
+    try:
+        agid = after.channel.guild.id
+        if(agid in voiceLocks.keys()):
+            if(after.channel.id in voiceLocks[agid]):
+                print("joined locked channel")
+                userQueue.append(member)
+                await moveRoutine(member, after.channel.guild, after.channel)
+                
+    except:
+        pass
+
+    #try:
+    if(before.channel.id in voiceLocks[before.channel.guild.id][1]):
+    
+        if not before.channel.members:
+            voiceLocks[before.channel.guild.id][1].remove(before.channel.id)
+            voicepkl = open(dPATH + '.voiceLock.pkl', "wb")
+            pickle.dump(voiceLocks, voicepkl)
+            await before.channel.delete()
+    #except:
+    #    pass
 
 bot.add_cog(AthenaCore(bot))
 bot.add_cog(VoiceCMD(bot))
