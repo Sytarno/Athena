@@ -401,14 +401,16 @@ class MudaeHelper(commands.Cog):
                     embed = msg.embeds[0]
                     
                     s = embed.description.split("\n")
-                    for i in s:
-                        if i == '\u200b' or i == '':
-                            s.remove(i)
-                            
-                    for i in s:
-                        if 'Harem value' in i:
-                            s.remove(i)
+                    
+                    for line in s:
+                        if line == '\u200b' or line == '':
+                            s.remove(line)
 
+                    for line in s:
+                        if "<:kakera:469835869059153940>" in line:
+                            s.remove(line)
+
+                    
                     for x in range(0, len(s)):
                         s[x] = s[x].replace("*", "")
                         s[x] = s[x].replace(" ka", "")
@@ -421,15 +423,15 @@ class MudaeHelper(commands.Cog):
                         v = char[ind:]
                         n = char[:ind]
                         
+                        
                         value.append(int(v))
-                        try:
-                            if(names[str(int(v))]):
-                                names[str(int(v))].append(n)
-                        except:
+                        if str(int(v)) not in names.keys():
                             names[str(int(v))] = [n]
+                        else:
+                            names[str(int(v))].append(n)
 
             if page > 0 and len(value) > 0:
-                out = "\n**Copy and send this message:** \n\n"
+                out = "\n**Copy and send this message after $sm:** \n\n"
                 value.sort(reverse = True)
             
                 valueF = []
@@ -499,7 +501,6 @@ async def on_voice_state_update(member, before, after):
         agid = after.channel.guild.id
         if(agid in voiceLocks.keys()):
             if(after.channel.id in voiceLocks[agid]):
-                print("joined locked channel")
                 userQueue.append(member)
                 await moveRoutine(member, after.channel.guild, after.channel)
                 
