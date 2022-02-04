@@ -10,6 +10,8 @@ echo "Lavalink PID: $javaPID"
 
 cd ../
 
+sleep 5
+
 echo "Starting Athena..."
 
 nohup python3 bot.py > lavalink/logs/botlog.txt & 

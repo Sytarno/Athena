@@ -507,16 +507,17 @@ async def on_voice_state_update(member, before, after):
     except:
         pass
 
-    #try:
-    if(before.channel.id in voiceLocks[before.channel.guild.id][1]):
-    
-        if not before.channel.members:
-            voiceLocks[before.channel.guild.id][1].remove(before.channel.id)
-            voicepkl = open(dPATH + '.voiceLock.pkl', "wb")
-            pickle.dump(voiceLocks, voicepkl)
-            await before.channel.delete()
-    #except:
-    #    pass
+    try:
+        bgid = before.channel.guild.id
+        if(bgid in voiceLocks.keys()):
+            if(before.channel.id in voiceLocks[before.channel.guild.id][1]):
+                if not before.channel.members:
+                    voiceLocks[before.channel.guild.id][1].remove(before.channel.id)
+                    voicepkl = open(dPATH + '.voiceLock.pkl', "wb")
+                    pickle.dump(voiceLocks, voicepkl)
+                    await before.channel.delete()
+    except:
+        pass
 
 bot.add_cog(AthenaCore(bot))
 bot.add_cog(VoiceCMD(bot))

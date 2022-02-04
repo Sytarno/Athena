@@ -1,1 +1,1 @@
-WEBSOCKET | Connection Failure:: Cannot connect to host 10.0.0.156:2333 ssl:default [Connect call failed ('10.0.0.156', 2333)]
+HTTP Error for GET to https://api.spotify.com/v1/tracks/kmnz x oresama with Params: {'market': None} returned 400 due to invalid id
