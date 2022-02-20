@@ -136,11 +136,11 @@ class AthenaCore(commands.Cog):
                 authorizedChannels.append(str(b.channel.id))
                 write(dPATH + '.authorizedChannels.txt', authorizedChannels)
 
-                await b.send(f'Added this channel to {bot.user}')
+                await b.send(embed=generateEmbed(b, '', f'Added this channel to {bot.user}'))
             else:
-                await b.send(f'This channel has already been added, {b.author.mention}.')
+                await b.send(embed=generateEmbed(b, '', f'This channel has already been added, {b.author.mention}.'))
         else:
-            await b.send(f'You are not authorized to do that, {b.author.mention}.')
+            await b.send(embed=generateEmbed(b, '', f'You are not authorized to do that, {b.author.mention}.'))
 
     @commands.command(name="removeChannel")
     async def _removeChannel(self, b):
@@ -151,11 +151,11 @@ class AthenaCore(commands.Cog):
                 authorizedChannels.remove(str(b.channel.id))
                 write(dPATH + '.authorizedChannels.txt', authorizedChannels)
 
-                await b.send(f'Removed this channel from {bot.user}')
+                await b.send(embed=generateEmbed(b, '', f'Removed this channel from {bot.user}'))
             else:
-                await b.send(f'This channel has been removed already, {b.author.mention}.')
+                await b.send(embed=generateEmbed(b, '', f'This channel has been removed already, {b.author.mention}.'))
         else:
-            await b.send(f'You are not authorized to do that, {b.author.mention}.')
+            await b.send(embed=generateEmbed(b, '', f'You are not authorized to do that, {b.author.mention}.'))
 
     @commands.command(name="ping")
     async def _ping(self, b):
