@@ -84,7 +84,7 @@ class NewPlayer(wavelink.player.Player):
         #if not self.avgUse:
         self.avgUse = [1, 0, time.time()]
             
-        self.playTime = 0
+        self.disconnect_task = None
         self.skips = 0
         self.sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id="051b9bd0a22f4740bea03b9363ef883a",
                                                            client_secret="c2cf3efd91e04bdb8b1b3194fcba8b9e"))
@@ -371,31 +371,36 @@ class Music(commands.Cog):
     async def _currentCheck(self, ctx):
         player = self.bot.wavelink.get_player(ctx.guild.id, cls=NewPlayer)
         if await self.userConnectedCheck(ctx) and await self.playerConnectedCheck(ctx):
-            c = int(((player.volume/1000) ** 0.5) * 28)
-            highlight = BAR_ORIGINAL[:c]
-            nonhighlight = BAR_ORIGINAL[c:]
+            if(player.current):
+                c = int(((player.volume/1000) ** 0.5) * 28)
+                highlight = BAR_ORIGINAL[:c]
+                nonhighlight = BAR_ORIGINAL[c:]
 
-            uri = player.current.uri.replace("https://www.youtube.com/watch?v=", "")
-            e = discord.Embed(title = 'Currently playing:',
-                                                thumbnail = f'https://img.youtube.com/vi/{uri}/maxresdefault.jpg',
-                                                description = f'```css\n{player.current.title}\n```\n\n',
-                                                colour = 1973790)
+                uri = player.current.uri.replace("https://www.youtube.com/watch?v=", "")
+                e = discord.Embed(title = 'Currently playing:',
+                                                    thumbnail = f'https://img.youtube.com/vi/{uri}/maxresdefault.jpg',
+                                                    description = f'```css\n{player.current.title}\n```\n\n',
+                                                    colour = 1973790)
 
-            FULL = "───────────────────────────────────────"
-            #secIn = time.time() - player.playTime
-            secIn = player.position / 1000
-            secLen = player.current.length / 1000
-            cur = int(len(FULL) * secIn / secLen)
-            
-            def timeGet(secs):
-                return f'{int(secs/60)}m {int(secs%60)}s'
-            
-            e.add_field(name = f'{timeGet(secIn)} | {timeGet(secLen)}', value = f'{FULL[:cur] + "[●](https://www.youtube.com/watch?v=dQw4w9WgXcQ)" + FULL[1+cur:]}')
-            e.add_field(name = f'**Volume**', value = f'[{highlight}](https://www.youtube.com/watch?v=dQw4w9WgXcQ){nonhighlight}', inline=False)
-            e.add_field(name = '**Filter**', value = f'wavelink.eqs.Equalizer.{player.filter}()\n', inline=False)
-            e.set_thumbnail(url=f'https://img.youtube.com/vi/{uri}/maxresdefault.jpg')
+                FULL = "───────────────────────────────────────"
+                #secIn = time.time() - player.playTime
+                secIn = player.position / 1000
+                secLen = player.current.length / 1000
+                cur = int(len(FULL) * secIn / secLen)
+                
+                def timeGet(secs):
+                    return f'{int(secs/60)}m {int(secs%60)}s'
+                
+                e.add_field(name = f'{timeGet(secIn)} | {timeGet(secLen)}', value = f'{FULL[:cur] + "[●](https://www.youtube.com/watch?v=dQw4w9WgXcQ)" + FULL[1+cur:]}')
+                e.add_field(name = f'**Volume**', value = f'[{highlight}](https://www.youtube.com/watch?v=dQw4w9WgXcQ){nonhighlight}', inline=False)
+                e.add_field(name = '**Filter**', value = f'wavelink.eqs.Equalizer.{player.filter}()\n', inline=False)
+                e.set_thumbnail(url=f'https://img.youtube.com/vi/{uri}/maxresdefault.jpg')
 
-            await ctx.send(embed=e)                                            
+                await ctx.send(embed=e)  
+            else:
+                await ctx.send(embed=discord.Embed(description = f'**Currently playing:**```css\nnothing . . .\n```',
+                                                   colour = 1973790))
+
 
     @commands.command(name='view_eq', aliases = ["view-eq"])
     async def _display_Eq(self, ctx):
@@ -452,6 +457,16 @@ class Music(commands.Cog):
     async def send_song_info(self, player: NewPlayer, track: wavelink.Track):
         await player.send(embed=discord.Embed(description = '**Currently playing:**\n' + f'```css\n{track.title}\n```',
                                                   colour = 1973790))
+    
+    async def await_disconnect(self, player: NewPlayer):
+        try:
+            await asyncio.sleep(60)
+            await player.disconnect()
+        except asyncio.CancelledError:
+            raise
+        finally:
+            pass
+    
     async def coroutinePlay(self, player):
         player.updateAvg(0)
 
@@ -486,13 +501,16 @@ class Music(commands.Cog):
             if len(player.queue) > 0:
                 await self.coroutinePlay(player)
             else:
-                await player.disconnect()
+                player.disconnect_task = asyncio.create_task(self.await_disconnect(player))
+                await player.disconnect_task
 
         if isinstance(event, wavelink.events.TrackStart):
             player = event.player
             track = player.current
 
-            player.playTime = time.time()
+            if(player.disconnect_task):
+                player.disconnect_task.cancel()
+
             print(f'Playing a song in {player.guild_id}: {track.title}')
 
             await self.send_song_info(player, track)

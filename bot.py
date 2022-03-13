@@ -319,6 +319,7 @@ class VoiceCMD(commands.Cog):
 
             for x in range(0, count):
                 await ctx.send(f'{m}')
+                await asyncio.sleep(0.75)
         except:
             await ctx.send(embed=generateEmbed(ctx, '', 'Invalid arguments. Count expected as first argument'))
 
