@@ -1,4 +1,25 @@
-2022-03-13 06:58:12.721  INFO 281671 --- [main] lavalink.server.Launcher                 : 
+2022-03-16 06:40:55.172  INFO 282797 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "d1bd8b42b973efde2a46c65aec7abd1f", "event": {"token": "6117ba1ec032fde3", "guild_id": "800843827375898625", "endpoint": "us-west5834.discord.media:443"}}
+2022-03-16 06:40:55.208  INFO 282797 --- [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:daoko party night"
+2022-03-16 06:40:55.990  INFO 282797 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: daoko party night
+2022-03-16 06:40:56.020  INFO 282797 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAArgIASFBhcnR5IE5pZ2h0IC0gQXJrbmlnaHRzIFggREFPS0/Dl+WyoeadkemdluW5uCAg44K544OG44OD44OX44Ki44OD44OXTE9WRQAMVHdpbGxlZCBXYXZlAAAAAAABtYAAC213YW5Ja0hhRHhvAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9bXdhbklrSGFEeG8AB3lvdXR1YmUAAAAAAAAAAA==", "noReplace": false, "startTime": "0"}
+2022-03-16 06:41:55.852  INFO 282797 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "stop", "guildId": "800843827375898625"}
+2022-03-16 06:41:55.858  INFO 282797 --- [XNIO-1 task-4] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://www.youtube.com/watch?v=wsl8HS_lVHE"
+2022-03-16 06:41:56.818  INFO 282797 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: https://www.youtube.com/watch?v=wsl8HS_lVHE
+2022-03-16 06:41:56.826  INFO 282797 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAngIAP0RBT0tPIMOXIOWyoeadkemdluW5uOOAjuOCueODhuODg+ODl+OCouODg+ODl0xPVkXjgI9NVVNJQyBWSURFTwAFRGFva28AAAAAAAR0oAALd3NsOEhTX2xWSEUAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj13c2w4SFNfbFZIRQAHeW91dHViZQAAAAAAAAAA", "noReplace": false, "startTime": "0"}
+2022-03-16 06:48:19.700  INFO 282797 --- [XNIO-1 task-6] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://www.youtube.com/watch?v=dpE4R8dsqfQ"
+2022-03-16 06:48:19.724  INFO 282797 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "d1bd8b42b973efde2a46c65aec7abd1f", "event": {"token": "d6a78f2f93161351", "guild_id": "800843827375898625", "endpoint": "us-west5834.discord.media:443"}}
+2022-03-16 06:48:20.243  INFO 282797 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: https://www.youtube.com/watch?v=dpE4R8dsqfQ
+2022-03-16 06:48:20.249  INFO 282797 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAABHAIAp0NyYWIg6J+5IENsdWLjgI7jgqLjg4Pjg4jjg7vjgrbjg7vpm7vohLPjgrfjg4bjgqPjgI/jgJDjgrjjg6Pjg7Pjg5fvvIvDl2F2ZXggL+OCouODvOODhuOCo+OCueODiO+8lue1hOS4reS4gOeVqumrmOipleS+oeOCkumbhuOCgeOBn+iAheOBjOWEquWLnS/jgI5QUk9KRUNUIENPTVVD44CP44CRABvjgrjjg6Pjg7Pjg5fjg4Hjg6Pjg7Pjg43jg6sAAAAAAAK/IAALZkhxZnIwS2R6WDQAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1mSHFmcjBLZHpYNAAHeW91dHViZQAAAAAAAAAA", "noReplace": false, "startTime": "0"}
+2022-03-16 06:49:30.417  INFO 282797 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "stop", "guildId": "800843827375898625"}
+2022-03-16 06:49:30.422  INFO 282797 --- [XNIO-1 task-8] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://www.youtube.com/watch?v=dpE4R8dsqfQ"
+2022-03-16 06:49:30.869  INFO 282797 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: https://www.youtube.com/watch?v=dpE4R8dsqfQ
+2022-03-16 06:49:30.874  INFO 282797 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAABHAIAp0NyYWIg6J+5IENsdWLjgI7jgqLjg4Pjg4jjg7vjgrbjg7vpm7vohLPjgrfjg4bjgqPjgI/jgJDjgrjjg6Pjg7Pjg5fvvIvDl2F2ZXggL+OCouODvOODhuOCo+OCueODiO+8lue1hOS4reS4gOeVqumrmOipleS+oeOCkumbhuOCgeOBn+iAheOBjOWEquWLnS/jgI5QUk9KRUNUIENPTVVD44CP44CRABvjgrjjg6Pjg7Pjg5fjg4Hjg6Pjg7Pjg43jg6sAAAAAAAK/IAALZkhxZnIwS2R6WDQAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1mSHFmcjBLZHpYNAAHeW91dHViZQAAAAAAAAAA", "noReplace": false, "startTime": "0"}
+2022-03-16 06:49:57.790  INFO 282797 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "stop", "guildId": "800843827375898625"}
+2022-03-16 06:49:57.794  INFO 282797 --- [XNIO-1 task-10] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://www.youtube.com/watch?v=sxY5lfttrgA"
+2022-03-16 06:49:58.369  INFO 282797 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: https://www.youtube.com/watch?v=sxY5lfttrgA
+2022-03-16 06:49:58.374  INFO 282797 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAABAAIAi0NoZXZvbuOAjuOCr+ODreODvOODs+OAj+OAkOOCuOODo+ODs+ODl++8i8OXYXZleCAv44Ki44O844OG44Kj44K544OI77yW57WE5Lit5LiA55Wq6auY6KmV5L6h44KS6ZuG44KB44Gf6ICF44GM5YSq5YudL+OAjlBST0pFQ1QgQ09NVUPjgI/jgJEAG+OCuOODo+ODs+ODl+ODgeODo+ODs+ODjeODqwAAAAAAAX7QAAtzeFk1bGZ0dHJnQQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PXN4WTVsZnR0cmdBAAd5b3V0dWJlAAAAAAAAAAA=", "noReplace": false, "startTime": "0"}
+2022-03-16 06:52:08.614  INFO 282797 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "stop", "guildId": "800843827375898625"}
+2022-03-16 06:57:09.253  INFO 307723 --- [main] lavalink.server.Launcher                 : 
 
 [32m       .  [31m _                  _ _       _    [32m__ _ _
 [32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
@@ -16,39 +37,38 @@
 	JVM:            17.0.1
 	Lavaplayer      1.3.96-original
 
-2022-03-13 06:58:12.873  INFO 281671 --- [main] lavalink.server.Launcher                 : Starting Launcher on athena with PID 281671 (/home/ubuntu/Athena/lavalink/LavalinkPatch.jar started by ubuntu in /home/ubuntu/Athena/lavalink)
-2022-03-13 06:58:12.874  INFO 281671 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
-2022-03-13 06:58:12.930  WARN 281671 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2022-03-13 06:58:14.137  WARN 281671 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
-2022-03-13 06:58:14.161  INFO 281671 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
-2022-03-13 06:58:14.161  INFO 281671 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1233 ms
-2022-03-13 06:58:14.847  INFO 281671 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
-2022-03-13 06:58:14.990  INFO 281671 --- [main] lavalink.server.config.KoeConfiguration  : OS: Linux, Arch: aarch64
-2022-03-13 06:58:14.991  WARN 281671 --- [main] lavalink.server.config.KoeConfiguration  : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
-2022-03-13 06:58:15.011  WARN 281671 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
-2022-03-13 06:58:15.253  INFO 281671 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-13 06:58:15.522  INFO 281671 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
-2022-03-13 06:58:15.528  INFO 281671 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
-2022-03-13 06:58:15.591  INFO 281671 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 2333 (http) with context path ''
-2022-03-13 06:58:15.595  INFO 281671 --- [main] lavalink.server.Launcher                 : Started Launcher in 3.345 seconds (JVM running for 3.981)
-2022-03-13 06:58:15.597  INFO 281671 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/freyacodes/Lavalink/issues/295
-2022-03-13 06:58:19.651  INFO 281671 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-03-13 06:58:19.651  INFO 281671 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-03-13 06:58:19.656  INFO 281671 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2022-03-13 06:58:19.674  INFO 281671 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:58558
-2022-03-13 06:58:19.729  INFO 281671 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Connection successfully established
-2022-03-13 06:58:19.729  WARN 281671 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
-2022-03-13 06:58:37.781  INFO 281671 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "be9737d898baa2dc1b6827392575e192", "event": {"token": "e42cd7d2773c93ff", "guild_id": "800843827375898625", "endpoint": "us-west3622.discord.media:443"}}
-2022-03-13 06:58:37.797  INFO 281671 --- [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:2 second video"
-2022-03-13 06:58:38.485  INFO 281671 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: 2 second video
-2022-03-13 06:58:38.505  INFO 281671 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAdwIADjIgU2Vjb25kIFZpZGVvAA8yIFNlY29uZCBWaWRlb3MAAAAAAAAH0AALVU9fUXVYcjUyMUkAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1VT19RdVhyNTIxSQAHeW91dHViZQAAAAAAAAAA", "noReplace": false, "startTime": "0"}
-2022-03-13 06:59:11.549  INFO 281671 --- [XNIO-1 task-4] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:anything"
-2022-03-13 06:59:11.954  INFO 281671 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: anything
-2022-03-13 06:59:11.961  INFO 281671 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAfQIAFUFueXRoaW5nIChmZWF0LiBOZXh0KQAOSmFoZWltIC0gVG9waWMAAAAAAARlAAALMm9uTnExMVdIb00AAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj0yb25OcTExV0hvTQAHeW91dHViZQAAAAAAAAAA", "noReplace": false, "startTime": "0"}
-2022-03-13 06:59:34.969  INFO 281671 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "seek", "guildId": "800843827375898625", "position": 200000}
-2022-03-13 06:59:38.806  INFO 281671 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "seek", "guildId": "800843827375898625", "position": 250000}
-2022-03-13 06:59:47.617  INFO 281671 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "seek", "guildId": "800843827375898625", "position": 280000}
-2022-03-13 07:01:10.333  INFO 281886 --- [main] lavalink.server.Launcher                 : 
+2022-03-16 06:57:09.359  INFO 307723 --- [main] lavalink.server.Launcher                 : Starting Launcher on athena with PID 307723 (/home/ubuntu/Athena/lavalink/LavalinkPatch.jar started by ubuntu in /home/ubuntu/Athena/lavalink)
+2022-03-16 06:57:09.361  INFO 307723 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2022-03-16 06:57:09.412  WARN 307723 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-03-16 06:57:10.720  WARN 307723 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022-03-16 06:57:10.743  INFO 307723 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2022-03-16 06:57:10.744  INFO 307723 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1325 ms
+2022-03-16 06:57:11.446  INFO 307723 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2022-03-16 06:57:11.596  INFO 307723 --- [main] lavalink.server.config.KoeConfiguration  : OS: Linux, Arch: aarch64
+2022-03-16 06:57:11.597  WARN 307723 --- [main] lavalink.server.config.KoeConfiguration  : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
+2022-03-16 06:57:11.615  WARN 307723 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2022-03-16 06:57:11.867  INFO 307723 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-16 06:57:12.176  INFO 307723 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2022-03-16 06:57:12.184  INFO 307723 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2022-03-16 06:57:12.234  INFO 307723 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 2333 (http) with context path ''
+2022-03-16 06:57:12.237  INFO 307723 --- [main] lavalink.server.Launcher                 : Started Launcher in 3.458 seconds (JVM running for 3.918)
+2022-03-16 06:57:12.239  INFO 307723 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/freyacodes/Lavalink/issues/295
+2022-03-16 06:57:16.292  INFO 307723 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-16 06:57:16.292  INFO 307723 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-16 06:57:16.297  INFO 307723 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-03-16 06:57:16.316  INFO 307723 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:45954
+2022-03-16 06:57:16.370  INFO 307723 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 06:57:16.370  WARN 307723 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 06:57:19.698  INFO 307723 --- [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:ロクデナシ ただ声一つ"
+2022-03-16 06:57:19.768  INFO 307723 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "2e85b1cfbcc303d25969bbdd8dc36ad6", "event": {"token": "6557c11f769a527b", "guild_id": "800843827375898625", "endpoint": "us-west5834.discord.media:443"}}
+2022-03-16 06:57:20.483  INFO 307723 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: ロクデナシ ただ声一つ
+2022-03-16 06:57:20.504  INFO 307723 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAeAIAD+OBn+OBoOWjsOS4gOOBpAAP44Ot44Kv44OH44OK44K3AAAAAAACeNAAC0l3UUduWHBza29ZAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9SXdRR25YcHNrb1kAB3lvdXR1YmUAAAAAAAAAAA==", "noReplace": false, "startTime": "0"}
+2022-03-16 06:58:19.555  INFO 307723 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "stop", "guildId": "800843827375898625"}
+2022-03-16 06:58:19.560  INFO 307723 --- [XNIO-1 task-4] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://www.youtube.com/watch?v=YsSShYaKOvk"
+2022-03-16 06:58:20.984  INFO 307723 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: https://www.youtube.com/watch?v=YsSShYaKOvk
+2022-03-16 06:58:20.992  INFO 307723 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAA1wIANeOCouOCpOODh+ODs+ODhuOCo+ODhuOCoyAvIOWuteW0jiDlpY8gw5cg5Yid6Z+z44Of44KvAEjjg5fjg63jgrjjgqfjgq/jg4jjgrvjgqvjgqQg44Kr44Op44OV44Or44K544OG44O844K4ISBmZWF0LiDliJ3pn7Pjg5/jgq8AAAAAAAJ06AALWXNTU2hZYUtPdmsAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1Zc1NTaFlhS092awAHeW91dHViZQAAAAAAAAAA", "noReplace": false, "startTime": "0"}
+2022-03-16 06:59:07.017  INFO 307723 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "stop", "guildId": "800843827375898625"}
+2022-03-16 06:59:46.492  INFO 308482 --- [main] lavalink.server.Launcher                 : 
 
 [32m       .  [31m _                  _ _       _    [32m__ _ _
 [32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
@@ -66,268 +86,271 @@
 	JVM:            17.0.1
 	Lavaplayer      1.3.96-original
 
-2022-03-13 07:01:10.446  INFO 281886 --- [main] lavalink.server.Launcher                 : Starting Launcher on athena with PID 281886 (/home/ubuntu/Athena/lavalink/LavalinkPatch.jar started by ubuntu in /home/ubuntu/Athena/lavalink)
-2022-03-13 07:01:10.448  INFO 281886 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
-2022-03-13 07:01:10.503  WARN 281886 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2022-03-13 07:01:11.682  WARN 281886 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
-2022-03-13 07:01:11.704  INFO 281886 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
-2022-03-13 07:01:11.704  INFO 281886 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1201 ms
-2022-03-13 07:01:12.371  INFO 281886 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
-2022-03-13 07:01:12.531  INFO 281886 --- [main] lavalink.server.config.KoeConfiguration  : OS: Linux, Arch: aarch64
-2022-03-13 07:01:12.531  WARN 281886 --- [main] lavalink.server.config.KoeConfiguration  : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
-2022-03-13 07:01:12.562  WARN 281886 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
-2022-03-13 07:01:12.786  INFO 281886 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-13 07:01:13.047  INFO 281886 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
-2022-03-13 07:01:13.054  INFO 281886 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
-2022-03-13 07:01:13.107  INFO 281886 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 2333 (http) with context path ''
-2022-03-13 07:01:13.111  INFO 281886 --- [main] lavalink.server.Launcher                 : Started Launcher in 3.24 seconds (JVM running for 3.743)
-2022-03-13 07:01:13.112  INFO 281886 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/freyacodes/Lavalink/issues/295
-2022-03-13 07:01:17.243  INFO 281886 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-03-13 07:01:17.244  INFO 281886 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-03-13 07:01:17.249  INFO 281886 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2022-03-13 07:01:17.266  INFO 281886 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:58598
-2022-03-13 07:01:17.317  INFO 281886 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Connection successfully established
-2022-03-13 07:01:17.318  WARN 281886 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
-2022-03-13 07:01:54.772  INFO 281886 --- [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://www.youtube.com/watch?v=TK4N5W22Gts"
-2022-03-13 07:01:54.834  INFO 281886 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "201b51874328395aa95c7a1b54084ac9", "event": {"token": "70be37f306a0d5e0", "guild_id": "800843827375898625", "endpoint": "us-west3622.discord.media:443"}}
-2022-03-13 07:01:55.557  INFO 281886 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: https://www.youtube.com/watch?v=TK4N5W22Gts
-2022-03-13 07:01:55.573  INFO 281886 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAcAIADjIgU2Vjb25kIFZpZGVvAAhaZXR6dTUwMAAAAAAAAAu4AAtUSzRONVcyMkd0cwABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PVRLNE41VzIyR3RzAAd5b3V0dWJlAAAAAAAAAAA=", "noReplace": false, "startTime": "0"}
-2022-03-13 07:02:18.912  INFO 282031 --- [main] lavalink.server.Launcher                 : 
+2022-03-16 06:59:46.610  INFO 308482 --- [main] lavalink.server.Launcher                 : Starting Launcher on athena with PID 308482 (/home/ubuntu/Athena/lavalink/LavalinkPatch.jar started by ubuntu in /home/ubuntu/Athena/lavalink)
+2022-03-16 06:59:46.610  INFO 308482 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2022-03-16 06:59:46.701  WARN 308482 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-03-16 06:59:47.861  WARN 308482 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022-03-16 06:59:47.894  INFO 308482 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2022-03-16 06:59:47.895  INFO 308482 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1233 ms
+2022-03-16 06:59:48.569  INFO 308482 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2022-03-16 06:59:48.715  INFO 308482 --- [main] lavalink.server.config.KoeConfiguration  : OS: Linux, Arch: aarch64
+2022-03-16 06:59:48.715  WARN 308482 --- [main] lavalink.server.config.KoeConfiguration  : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
+2022-03-16 06:59:48.733  WARN 308482 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2022-03-16 06:59:49.002  INFO 308482 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-16 06:59:49.278  INFO 308482 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2022-03-16 06:59:49.285  INFO 308482 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2022-03-16 06:59:49.344  INFO 308482 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 2333 (http) with context path ''
+2022-03-16 06:59:49.349  INFO 308482 --- [main] lavalink.server.Launcher                 : Started Launcher in 3.374 seconds (JVM running for 3.863)
+2022-03-16 06:59:49.351  INFO 308482 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/freyacodes/Lavalink/issues/295
+2022-03-16 06:59:53.879  INFO 308482 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-16 06:59:53.880  INFO 308482 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-16 06:59:53.885  INFO 308482 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-03-16 06:59:53.902  INFO 308482 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:45984
+2022-03-16 06:59:53.955  INFO 308482 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 06:59:53.955  WARN 308482 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 06:59:59.950  INFO 308482 --- [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://www.youtube.com/watch?v=YsSShYaKOvk"
+2022-03-16 07:00:00.223  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "be5e0242814f3435959ca5c8e91c171b", "event": {"token": "6557c11f769a527b", "guild_id": "800843827375898625", "endpoint": "us-west5834.discord.media:443"}}
+2022-03-16 07:00:00.554  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: https://www.youtube.com/watch?v=YsSShYaKOvk
+2022-03-16 07:00:00.580  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAA1wIANeOCouOCpOODh+ODs+ODhuOCo+ODhuOCoyAvIOWuteW0jiDlpY8gw5cg5Yid6Z+z44Of44KvAEjjg5fjg63jgrjjgqfjgq/jg4jjgrvjgqvjgqQg44Kr44Op44OV44Or44K544OG44O844K4ISBmZWF0LiDliJ3pn7Pjg5/jgq8AAAAAAAJ06AALWXNTU2hZYUtPdmsAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1Zc1NTaFlhS092awAHeW91dHViZQAAAAAAAAAA", "noReplace": false, "startTime": "0"}
+2022-03-16 07:01:10.332  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "stop", "guildId": "800843827375898625"}
+2022-03-16 07:01:10.337  INFO 308482 --- [XNIO-1 task-4] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "scsearch:deez nuts"
+2022-03-16 07:01:10.340  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] c.s.d.l.s.s.SoundCloudClientIdTracker    : Updating SoundCloud client ID (current is null).
+2022-03-16 07:01:10.770  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] c.s.d.l.s.s.SoundCloudClientIdTracker    : Updating SoundCloud client ID succeeded, new ID is iJrxQkZJ16hwLUMCp8VVr69JP84PChVF.
+2022-03-16 07:01:11.177  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: deez nuts
+2022-03-16 07:01:11.185  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAA3gIACURFRVogTlVUUwAOR2Vyb25pbW8gQmVhdHMAAAAAAAINPwBxTzpodHRwczovL2FwaS12Mi5zb3VuZGNsb3VkLmNvbS9tZWRpYS9zb3VuZGNsb3VkOnRyYWNrczoyMDI3OTIyMDcvOWFjMDMxZjItNTU4Mi00NjM1LTgzYzgtOWMxMTE1OGFhN2QwL3N0cmVhbS9obHMAAQAvaHR0cHM6Ly9zb3VuZGNsb3VkLmNvbS9nZXJvbmltby1iZWF0cy9kZWV6LW51dHMACnNvdW5kY2xvdWQAAAAAAAAAAA==", "noReplace": false, "startTime": "0"}
+2022-03-16 07:01:17.201  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "stop", "guildId": "800843827375898625"}
+2022-03-16 07:01:17.206  INFO 308482 --- [XNIO-1 task-6] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "scsearch:cat in a pickle"
+2022-03-16 07:01:17.625  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: cat in a pickle
+2022-03-16 07:01:17.631  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAA7QIAGkNhdCBJbiBBIFBpY2tsZSBbb3JpZ2luYWxdAARueWFhAAAAAAABDgYAcU86aHR0cHM6Ly9hcGktdjIuc291bmRjbG91ZC5jb20vbWVkaWEvc291bmRjbG91ZDp0cmFja3M6NDExOTg1NTk2LzZkZmI0OGIyLTAzNmItNGQ3ZC1iNmEwLTM5YzFlMzI2MWNkMS9zdHJlYW0vaGxzAAEAN2h0dHBzOi8vc291bmRjbG91ZC5jb20vbnlhYWNodS9jYXQtaW4tYS1waWNrbGUtb3JpZ2luYWwACnNvdW5kY2xvdWQAAAAAAAAAAA==", "noReplace": false, "startTime": "0"}
+2022-03-16 07:03:55.639  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "be5e0242814f3435959ca5c8e91c171b", "event": {"token": "cebcf671979951ff", "guild_id": "800843827375898625", "endpoint": "us-west835.discord.media:443"}}
+2022-03-16 07:04:41.824  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : Connection closed from /10.0.0.156:45984 -- CloseStatus[code=1006, reason=]
+2022-03-16 07:04:41.840  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-03-16 07:09:07.166  INFO 308482 --- [XNIO-1 task-8] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:46068
+2022-03-16 07:09:07.178  INFO 308482 --- [XNIO-1 task-8] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 07:09:07.178  WARN 308482 --- [XNIO-1 task-8] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 07:09:49.106  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "68f41ad02e95656aa3c77741598c28b8", "event": {"token": "cd61569d8535c118", "guild_id": "800843827375898625", "endpoint": "us-west835.discord.media:443"}}
+2022-03-16 07:10:18.491  INFO 308482 --- [XNIO-1 task-9] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=_U2-SRW-wiw"
+2022-03-16 07:10:18.626  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded track ファジータウン / KMNZ × ORESAMA
+2022-03-16 07:10:18.643  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAmQIAJ+ODleOCoeOCuOODvOOCv+OCpuODsyAvIEtNTlogw5cgT1JFU0FNQQAYT1JFU0FNQSBPZmZpY2lhbCBDaGFubmVsAAAAAAADfogAC19VMi1TUlctd2l3AAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9X1UyLVNSVy13aXcAB3lvdXR1YmUAAAAAAAAAAA==", "noReplace": false, "startTime": "0"}
+2022-03-16 07:13:32.618  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : Connection closed from /10.0.0.156:46068 -- CloseStatus[code=1006, reason=]
+2022-03-16 07:13:32.618  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketContext         : Shutting down 1 playing players.
+2022-03-16 07:13:37.974  INFO 308482 --- [XNIO-1 task-11] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:46104
+2022-03-16 07:13:37.978  INFO 308482 --- [XNIO-1 task-11] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 07:13:37.979  WARN 308482 --- [XNIO-1 task-11] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 07:14:18.999  INFO 308482 --- [XNIO-1 task-12] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=_U2-SRW-wiw"
+2022-03-16 07:14:19.079  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "e3bc1b4afe14692bee1af54a770a5932", "event": {"token": "cd61569d8535c118", "guild_id": "800843827375898625", "endpoint": "us-west835.discord.media:443"}}
+2022-03-16 07:14:19.116  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded track ファジータウン / KMNZ × ORESAMA
+2022-03-16 07:14:19.122  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAmQIAJ+ODleOCoeOCuOODvOOCv+OCpuODsyAvIEtNTlogw5cgT1JFU0FNQQAYT1JFU0FNQSBPZmZpY2lhbCBDaGFubmVsAAAAAAADfogAC19VMi1TUlctd2l3AAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9X1UyLVNSVy13aXcAB3lvdXR1YmUAAAAAAAAAAA==", "noReplace": false, "startTime": "0"}
+2022-03-16 07:18:06.375  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : Connection closed from /10.0.0.156:46104 -- CloseStatus[code=1006, reason=]
+2022-03-16 07:18:06.376  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketContext         : Shutting down 1 playing players.
+2022-03-16 07:18:10.287  INFO 308482 --- [XNIO-1 task-14] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:46146
+2022-03-16 07:18:10.293  INFO 308482 --- [XNIO-1 task-14] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 07:18:10.293  WARN 308482 --- [XNIO-1 task-14] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 07:18:19.150  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "3a1f4a84461b5c06b85b64e903ed11c6", "event": {"token": "cd61569d8535c118", "guild_id": "800843827375898625", "endpoint": "us-west835.discord.media:443"}}
+2022-03-16 07:18:38.029  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /10.0.0.156:46146 -- CloseStatus[code=1006, reason=]
+2022-03-16 07:18:38.029  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-03-16 07:18:41.618  INFO 308482 --- [XNIO-1 task-15] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:46154
+2022-03-16 07:18:41.622  INFO 308482 --- [XNIO-1 task-15] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 07:18:41.622  WARN 308482 --- [XNIO-1 task-15] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 07:18:41.899  INFO 308482 --- [XNIO-1 task-16] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:ロクデナシ ただ声一つ"
+2022-03-16 07:18:41.996  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "51c59c1a0d96c7b596b8f560440fc921", "event": {"token": "cd61569d8535c118", "guild_id": "800843827375898625", "endpoint": "us-west835.discord.media:443"}}
+2022-03-16 07:18:42.357  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: ロクデナシ ただ声一つ
+2022-03-16 07:18:42.365  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAeAIAD+OBn+OBoOWjsOS4gOOBpAAP44Ot44Kv44OH44OK44K3AAAAAAACeNAAC0l3UUduWHBza29ZAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9SXdRR25YcHNrb1kAB3lvdXR1YmUAAAAAAAAAAA==", "noReplace": false, "startTime": "0"}
+2022-03-16 07:19:05.523  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /10.0.0.156:46154 -- CloseStatus[code=1006, reason=]
+2022-03-16 07:19:05.524  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketContext         : Shutting down 1 playing players.
+2022-03-16 07:19:09.130  INFO 308482 --- [XNIO-1 task-18] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:46174
+2022-03-16 07:19:09.133  INFO 308482 --- [XNIO-1 task-18] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 07:19:09.133  WARN 308482 --- [XNIO-1 task-18] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 07:19:09.782  INFO 308482 --- [XNIO-1 task-19] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:ロクデナシ ただ声一つ"
+2022-03-16 07:19:09.807  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "d500fea60c83e7e7b50ae0402c5d531a", "event": {"token": "cd61569d8535c118", "guild_id": "800843827375898625", "endpoint": "us-west835.discord.media:443"}}
+2022-03-16 07:19:10.228  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: ロクデナシ ただ声一つ
+2022-03-16 07:19:10.234  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAeAIAD+OBn+OBoOWjsOS4gOOBpAAP44Ot44Kv44OH44OK44K3AAAAAAACeNAAC0l3UUduWHBza29ZAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9SXdRR25YcHNrb1kAB3lvdXR1YmUAAAAAAAAAAA==", "noReplace": false, "startTime": "0"}
+2022-03-16 07:20:16.479  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "stop", "guildId": "800843827375898625"}
+2022-03-16 07:20:16.483  INFO 308482 --- [XNIO-1 task-21] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=XVFW7hh2wnU"
+2022-03-16 07:20:16.589  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded track PIKASONIC & Tatsunoshin - Euphoria (feat.Tsugumi Nagahara)
+2022-03-16 07:20:16.594  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAnQIAOlBJS0FTT05JQyAmIFRhdHN1bm9zaGluIC0gRXVwaG9yaWEgKGZlYXQuVHN1Z3VtaSBOYWdhaGFyYSkACVBJS0FTT05JQwAAAAAAAzBoAAtYVkZXN2hoMnduVQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PVhWRlc3aGgyd25VAAd5b3V0dWJlAAAAAAAAAAA=", "noReplace": false, "startTime": "0"}
+2022-03-16 07:22:16.186  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "stop", "guildId": "800843827375898625"}
+2022-03-16 07:22:16.189  INFO 308482 --- [XNIO-1 task-23] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://youtu.be/9itn-9GRUjM"
+2022-03-16 07:22:16.309  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded track ♬ soft chinese pop music to study for an hour to ; cpop
+2022-03-16 07:22:16.314  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAmgIAOeKZrCBzb2Z0IGNoaW5lc2UgcG9wIG11c2ljIHRvIHN0dWR5IGZvciBhbiBob3VyIHRvIDsgY3BvcAAHWcOgIHPDqAAAAAAAN4LwAAs5aXRuLTlHUlVqTQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PTlpdG4tOUdSVWpNAAd5b3V0dWJlAAAAAAAAAAA=", "noReplace": false, "startTime": "0"}
+2022-03-16 07:22:38.238  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "stop", "guildId": "800843827375898625"}
+2022-03-16 07:22:38.243  INFO 308482 --- [XNIO-1 task-25] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=XVFW7hh2wnU&list=LL&index=4"
+2022-03-16 07:22:38.287 ERROR 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Load failed
 
-[32m       .  [31m _                  _ _       _    [32m__ _ _
-[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
-[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
-[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
-[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
-[0m    =========================================[32m/_/_/_/[0m
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: The playlist does not exist.
+	at com.sedmelluq.discord.lavaplayer.source.youtube.DefaultYoutubePlaylistLoader.buildPlaylist(DefaultYoutubePlaylistLoader.java:60) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.DefaultYoutubePlaylistLoader.load(DefaultYoutubePlaylistLoader.java:48) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager$LoadingRoutes.playlist(YoutubeAudioSourceManager.java:240) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager$LoadingRoutes.playlist(YoutubeAudioSourceManager.java:228) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.DefaultYoutubeLinkRouter.routeFromUrlWithVideoId(DefaultYoutubeLinkRouter.java:96) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.DefaultYoutubeLinkRouter.routeFromMainDomain(DefaultYoutubeLinkRouter.java:64) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.DefaultYoutubeLinkRouter.route(DefaultYoutubeLinkRouter.java:42) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager.loadItemOnce(YoutubeAudioSourceManager.java:196) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager.loadItem(YoutubeAudioSourceManager.java:131) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItemOnce(DefaultAudioPlayerManager.java:436) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItem(DefaultAudioPlayerManager.java:418) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$createItemLoader$0(DefaultAudioPlayerManager.java:217) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+	Suppressed: com.sedmelluq.discord.lavaplayer.tools.exception.EnvironmentInformation: 
+  lavaplayer.version: 1.3.96-original
+  os.arch: aarch64
+  os.name: Linux
+  os.version: 5.11.0-1028-oracle
+  java.vendor: Oracle Corporation
+  java.version: 17.0.1
+  java.runtime.version: 17.0.1+12-LTS-39
+  java.vm.version: 17.0.1+12-LTS-39
 
-	Version:        3.4
-	Build:          1257
-	Build time:     26.10.2021 14:18:37 UTC
-	Branch          master
-	Commit:         a364833
-	Commit time:    26.10.2021 14:15:20 UTC
-	JVM:            17.0.1
-	Lavaplayer      1.3.96-original
+2022-03-16 07:22:38.288 ERROR 308482 --- [lava-daemon-pool-info-loader-2-thread-1] l.server.player.AudioLoaderRestHandler   : Track loading failed
 
-2022-03-13 07:02:19.016  INFO 282031 --- [main] lavalink.server.Launcher                 : Starting Launcher on athena with PID 282031 (/home/ubuntu/Athena/lavalink/LavalinkPatch.jar started by ubuntu in /home/ubuntu/Athena/lavalink)
-2022-03-13 07:02:19.017  INFO 282031 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
-2022-03-13 07:02:19.096  WARN 282031 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2022-03-13 07:02:20.227  WARN 282031 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
-2022-03-13 07:02:20.249  INFO 282031 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
-2022-03-13 07:02:20.250  INFO 282031 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1181 ms
-2022-03-13 07:02:20.937  INFO 282031 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
-2022-03-13 07:02:21.079  INFO 282031 --- [main] lavalink.server.config.KoeConfiguration  : OS: Linux, Arch: aarch64
-2022-03-13 07:02:21.079  WARN 282031 --- [main] lavalink.server.config.KoeConfiguration  : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
-2022-03-13 07:02:21.096  WARN 282031 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
-2022-03-13 07:02:21.325  INFO 282031 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-13 07:02:21.634  INFO 282031 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
-2022-03-13 07:02:21.641  INFO 282031 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
-2022-03-13 07:02:21.681  INFO 282031 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 2333 (http) with context path ''
-2022-03-13 07:02:21.684  INFO 282031 --- [main] lavalink.server.Launcher                 : Started Launcher in 3.237 seconds (JVM running for 3.741)
-2022-03-13 07:02:21.685  INFO 282031 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/freyacodes/Lavalink/issues/295
-2022-03-13 07:02:25.865  INFO 282031 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-03-13 07:02:25.866  INFO 282031 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-03-13 07:02:25.871  INFO 282031 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2022-03-13 07:02:25.888  INFO 282031 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:58622
-2022-03-13 07:02:25.959  INFO 282031 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Connection successfully established
-2022-03-13 07:02:25.960  WARN 282031 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
-2022-03-13 07:02:26.558  INFO 282031 --- [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://www.youtube.com/watch?v=TK4N5W22Gts"
-2022-03-13 07:02:26.590  INFO 282031 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "0c7eda77aecfa1ad42b30ef61a8c82e6", "event": {"token": "7ab89c1b19682b31", "guild_id": "800843827375898625", "endpoint": "us-west818.discord.media:443"}}
-2022-03-13 07:02:27.257  INFO 282031 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: https://www.youtube.com/watch?v=TK4N5W22Gts
-2022-03-13 07:02:27.274  INFO 282031 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAcAIADjIgU2Vjb25kIFZpZGVvAAhaZXR6dTUwMAAAAAAAAAu4AAtUSzRONVcyMkd0cwABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PVRLNE41VzIyR3RzAAd5b3V0dWJlAAAAAAAAAAA=", "noReplace": false, "startTime": "0"}
-2022-03-13 07:02:51.079  INFO 282031 --- [XNIO-1 task-4] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://www.youtube.com/watch?v=TK4N5W22Gts"
-2022-03-13 07:02:51.176  INFO 282031 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "0c7eda77aecfa1ad42b30ef61a8c82e6", "event": {"token": "f6b44d707ce7825b", "guild_id": "800843827375898625", "endpoint": "us-west818.discord.media:443"}}
-2022-03-13 07:02:51.574  INFO 282031 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: https://www.youtube.com/watch?v=TK4N5W22Gts
-2022-03-13 07:02:51.579  INFO 282031 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAcAIADjIgU2Vjb25kIFZpZGVvAAhaZXR6dTUwMAAAAAAAAAu4AAtUSzRONVcyMkd0cwABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PVRLNE41VzIyR3RzAAd5b3V0dWJlAAAAAAAAAAA=", "noReplace": false, "startTime": "0"}
-2022-03-13 07:02:58.533  INFO 282031 --- [XNIO-1 task-6] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://www.youtube.com/watch?v=TK4N5W22Gts"
-2022-03-13 07:02:59.019  INFO 282031 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: https://www.youtube.com/watch?v=TK4N5W22Gts
-2022-03-13 07:02:59.024  INFO 282031 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAcAIADjIgU2Vjb25kIFZpZGVvAAhaZXR6dTUwMAAAAAAAAAu4AAtUSzRONVcyMkd0cwABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PVRLNE41VzIyR3RzAAd5b3V0dWJlAAAAAAAAAAA=", "noReplace": false, "startTime": "0"}
-2022-03-13 07:03:37.487  INFO 282177 --- [main] lavalink.server.Launcher                 : 
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: The playlist does not exist.
+	at com.sedmelluq.discord.lavaplayer.source.youtube.DefaultYoutubePlaylistLoader.buildPlaylist(DefaultYoutubePlaylistLoader.java:60) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.DefaultYoutubePlaylistLoader.load(DefaultYoutubePlaylistLoader.java:48) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager$LoadingRoutes.playlist(YoutubeAudioSourceManager.java:240) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager$LoadingRoutes.playlist(YoutubeAudioSourceManager.java:228) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.DefaultYoutubeLinkRouter.routeFromUrlWithVideoId(DefaultYoutubeLinkRouter.java:96) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.DefaultYoutubeLinkRouter.routeFromMainDomain(DefaultYoutubeLinkRouter.java:64) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.DefaultYoutubeLinkRouter.route(DefaultYoutubeLinkRouter.java:42) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager.loadItemOnce(YoutubeAudioSourceManager.java:196) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager.loadItem(YoutubeAudioSourceManager.java:131) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItemOnce(DefaultAudioPlayerManager.java:436) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.checkSourcesForItem(DefaultAudioPlayerManager.java:418) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$createItemLoader$0(DefaultAudioPlayerManager.java:217) ~[lavaplayer-fork-1.3.96.jar!/:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+	Suppressed: com.sedmelluq.discord.lavaplayer.tools.exception.EnvironmentInformation: 
+  lavaplayer.version: 1.3.96-original
+  os.arch: aarch64
+  os.name: Linux
+  os.version: 5.11.0-1028-oracle
+  java.vendor: Oracle Corporation
+  java.version: 17.0.1
+  java.runtime.version: 17.0.1+12-LTS-39
+  java.vm.version: 17.0.1+12-LTS-39
 
-[32m       .  [31m _                  _ _       _    [32m__ _ _
-[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
-[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
-[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
-[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
-[0m    =========================================[32m/_/_/_/[0m
-
-	Version:        3.4
-	Build:          1257
-	Build time:     26.10.2021 14:18:37 UTC
-	Branch          master
-	Commit:         a364833
-	Commit time:    26.10.2021 14:15:20 UTC
-	JVM:            17.0.1
-	Lavaplayer      1.3.96-original
-
-2022-03-13 07:03:37.591  INFO 282177 --- [main] lavalink.server.Launcher                 : Starting Launcher on athena with PID 282177 (/home/ubuntu/Athena/lavalink/LavalinkPatch.jar started by ubuntu in /home/ubuntu/Athena/lavalink)
-2022-03-13 07:03:37.592  INFO 282177 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
-2022-03-13 07:03:37.653  WARN 282177 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2022-03-13 07:03:38.810  WARN 282177 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
-2022-03-13 07:03:38.833  INFO 282177 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
-2022-03-13 07:03:38.833  INFO 282177 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1183 ms
-2022-03-13 07:03:39.514  INFO 282177 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
-2022-03-13 07:03:39.655  INFO 282177 --- [main] lavalink.server.config.KoeConfiguration  : OS: Linux, Arch: aarch64
-2022-03-13 07:03:39.656  WARN 282177 --- [main] lavalink.server.config.KoeConfiguration  : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
-2022-03-13 07:03:39.675  WARN 282177 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
-2022-03-13 07:03:39.901  INFO 282177 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-13 07:03:40.188  INFO 282177 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
-2022-03-13 07:03:40.195  INFO 282177 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
-2022-03-13 07:03:40.236  INFO 282177 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 2333 (http) with context path ''
-2022-03-13 07:03:40.239  INFO 282177 --- [main] lavalink.server.Launcher                 : Started Launcher in 3.194 seconds (JVM running for 3.628)
-2022-03-13 07:03:40.240  INFO 282177 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/freyacodes/Lavalink/issues/295
-2022-03-13 07:03:44.535  INFO 282177 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-03-13 07:03:44.536  INFO 282177 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-03-13 07:03:44.541  INFO 282177 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2022-03-13 07:03:44.567  INFO 282177 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:58650
-2022-03-13 07:03:44.655  INFO 282177 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Connection successfully established
-2022-03-13 07:03:44.656  WARN 282177 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
-2022-03-13 07:03:45.181  INFO 282177 --- [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://www.youtube.com/watch?v=TK4N5W22Gts"
-2022-03-13 07:03:45.184  INFO 282177 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "fed64a07d376b1a5cfa8fbc8bff462a4", "event": {"token": "a29e15f150c2ba23", "guild_id": "800843827375898625", "endpoint": "us-west818.discord.media:443"}}
-2022-03-13 07:03:45.883  INFO 282177 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: https://www.youtube.com/watch?v=TK4N5W22Gts
-2022-03-13 07:03:45.899  INFO 282177 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAcAIADjIgU2Vjb25kIFZpZGVvAAhaZXR6dTUwMAAAAAAAAAu4AAtUSzRONVcyMkd0cwABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PVRLNE41VzIyR3RzAAd5b3V0dWJlAAAAAAAAAAA=", "noReplace": false, "startTime": "0"}
-2022-03-13 07:03:55.261  INFO 282177 --- [XNIO-1 task-4] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://www.youtube.com/watch?v=TK4N5W22Gts"
-2022-03-13 07:03:55.476  INFO 282177 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: https://www.youtube.com/watch?v=TK4N5W22Gts
-2022-03-13 07:03:55.480  INFO 282177 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAcAIADjIgU2Vjb25kIFZpZGVvAAhaZXR6dTUwMAAAAAAAAAu4AAtUSzRONVcyMkd0cwABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PVRLNE41VzIyR3RzAAd5b3V0dWJlAAAAAAAAAAA=", "noReplace": false, "startTime": "0"}
-2022-03-13 07:05:24.092  INFO 282390 --- [main] lavalink.server.Launcher                 : 
-
-[32m       .  [31m _                  _ _       _    [32m__ _ _
-[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
-[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
-[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
-[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
-[0m    =========================================[32m/_/_/_/[0m
-
-	Version:        3.4
-	Build:          1257
-	Build time:     26.10.2021 14:18:37 UTC
-	Branch          master
-	Commit:         a364833
-	Commit time:    26.10.2021 14:15:20 UTC
-	JVM:            17.0.1
-	Lavaplayer      1.3.96-original
-
-2022-03-13 07:05:24.203  INFO 282390 --- [main] lavalink.server.Launcher                 : Starting Launcher on athena with PID 282390 (/home/ubuntu/Athena/lavalink/LavalinkPatch.jar started by ubuntu in /home/ubuntu/Athena/lavalink)
-2022-03-13 07:05:24.204  INFO 282390 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
-2022-03-13 07:05:24.252  WARN 282390 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2022-03-13 07:05:25.384  WARN 282390 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
-2022-03-13 07:05:25.406  INFO 282390 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
-2022-03-13 07:05:25.406  INFO 282390 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1150 ms
-2022-03-13 07:05:26.043  INFO 282390 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
-2022-03-13 07:05:26.178  INFO 282390 --- [main] lavalink.server.config.KoeConfiguration  : OS: Linux, Arch: aarch64
-2022-03-13 07:05:26.178  WARN 282390 --- [main] lavalink.server.config.KoeConfiguration  : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
-2022-03-13 07:05:26.193  WARN 282390 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
-2022-03-13 07:05:26.427  INFO 282390 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-13 07:05:26.712  INFO 282390 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
-2022-03-13 07:05:26.719  INFO 282390 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
-2022-03-13 07:05:26.773  INFO 282390 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 2333 (http) with context path ''
-2022-03-13 07:05:26.776  INFO 282390 --- [main] lavalink.server.Launcher                 : Started Launcher in 3.149 seconds (JVM running for 3.654)
-2022-03-13 07:05:26.778  INFO 282390 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/freyacodes/Lavalink/issues/295
-2022-03-13 07:05:30.966  INFO 282390 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-03-13 07:05:30.967  INFO 282390 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-03-13 07:05:30.973  INFO 282390 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2022-03-13 07:05:30.989  INFO 282390 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:58680
-2022-03-13 07:05:31.039  INFO 282390 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Connection successfully established
-2022-03-13 07:05:31.040  WARN 282390 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
-2022-03-13 07:06:48.213  INFO 282390 --- [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://www.youtube.com/watch?v=QC8iQqtG0hg"
-2022-03-13 07:06:48.308  INFO 282390 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "64e9fa35506e68cfdcd7d89f0433880c", "event": {"token": "fdc49355f33dfbb9", "guild_id": "800843827375898625", "endpoint": "us-west4990.discord.media:443"}}
-2022-03-13 07:06:48.844  INFO 282390 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: https://www.youtube.com/watch?v=QC8iQqtG0hg
-2022-03-13 07:06:48.860  INFO 282390 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAmQIAKDUgU2Vjb25kIFZpZGVvOiBXYXRjaCB0aGUgTWlsa3kgV2F5IFJpc2UAF1BhbmFtYSBDaXR5IE5ld3MgSGVyYWxkAAAAAAAAH0AAC1FDOGlRcXRHMGhnAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9UUM4aVFxdEcwaGcAB3lvdXR1YmUAAAAAAAAAAA==", "noReplace": false, "startTime": "0"}
-2022-03-13 07:07:04.762  INFO 282390 --- [XNIO-1 task-4] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://www.youtube.com/watch?v=QC8iQqtG0hg"
-2022-03-13 07:07:04.946  INFO 282390 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: https://www.youtube.com/watch?v=QC8iQqtG0hg
-2022-03-13 07:07:04.951  INFO 282390 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAmQIAKDUgU2Vjb25kIFZpZGVvOiBXYXRjaCB0aGUgTWlsa3kgV2F5IFJpc2UAF1BhbmFtYSBDaXR5IE5ld3MgSGVyYWxkAAAAAAAAH0AAC1FDOGlRcXRHMGhnAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9UUM4aVFxdEcwaGcAB3lvdXR1YmUAAAAAAAAAAA==", "noReplace": false, "startTime": "0"}
-2022-03-13 07:08:04.124  INFO 282390 --- [XNIO-1 task-6] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://www.youtube.com/watch?v=QC8iQqtG0hg"
-2022-03-13 07:08:04.227  INFO 282390 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "64e9fa35506e68cfdcd7d89f0433880c", "event": {"token": "516ca1444296826b", "guild_id": "800843827375898625", "endpoint": "us-west818.discord.media:443"}}
-2022-03-13 07:08:04.414  INFO 282390 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: https://www.youtube.com/watch?v=QC8iQqtG0hg
-2022-03-13 07:08:04.419  INFO 282390 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAmQIAKDUgU2Vjb25kIFZpZGVvOiBXYXRjaCB0aGUgTWlsa3kgV2F5IFJpc2UAF1BhbmFtYSBDaXR5IE5ld3MgSGVyYWxkAAAAAAAAH0AAC1FDOGlRcXRHMGhnAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9UUM4aVFxdEcwaGcAB3lvdXR1YmUAAAAAAAAAAA==", "noReplace": false, "startTime": "0"}
-2022-03-13 07:08:17.233  INFO 282390 --- [XNIO-1 task-8] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://www.youtube.com/watch?v=QC8iQqtG0hg"
-2022-03-13 07:08:17.422  INFO 282390 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: https://www.youtube.com/watch?v=QC8iQqtG0hg
-2022-03-13 07:08:17.427  INFO 282390 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAmQIAKDUgU2Vjb25kIFZpZGVvOiBXYXRjaCB0aGUgTWlsa3kgV2F5IFJpc2UAF1BhbmFtYSBDaXR5IE5ld3MgSGVyYWxkAAAAAAAAH0AAC1FDOGlRcXRHMGhnAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9UUM4aVFxdEcwaGcAB3lvdXR1YmUAAAAAAAAAAA==", "noReplace": false, "startTime": "0"}
-2022-03-13 07:08:35.467  INFO 282390 --- [XNIO-1 task-10] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://www.youtube.com/watch?v=QC8iQqtG0hg"
-2022-03-13 07:08:35.569  INFO 282390 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "64e9fa35506e68cfdcd7d89f0433880c", "event": {"token": "e21fff4c4b0e6655", "guild_id": "800843827375898625", "endpoint": "us-west818.discord.media:443"}}
-2022-03-13 07:08:35.645  INFO 282390 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: https://www.youtube.com/watch?v=QC8iQqtG0hg
-2022-03-13 07:08:35.649  INFO 282390 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAmQIAKDUgU2Vjb25kIFZpZGVvOiBXYXRjaCB0aGUgTWlsa3kgV2F5IFJpc2UAF1BhbmFtYSBDaXR5IE5ld3MgSGVyYWxkAAAAAAAAH0AAC1FDOGlRcXRHMGhnAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9UUM4aVFxdEcwaGcAB3lvdXR1YmUAAAAAAAAAAA==", "noReplace": false, "startTime": "0"}
-2022-03-13 07:08:52.543  INFO 282390 --- [XNIO-1 task-12] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:https://www.youtube.com/watch?v=QC8iQqtG0hg"
-2022-03-13 07:08:52.739  INFO 282390 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: https://www.youtube.com/watch?v=QC8iQqtG0hg
-2022-03-13 07:08:52.745  INFO 282390 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAmQIAKDUgU2Vjb25kIFZpZGVvOiBXYXRjaCB0aGUgTWlsa3kgV2F5IFJpc2UAF1BhbmFtYSBDaXR5IE5ld3MgSGVyYWxkAAAAAAAAH0AAC1FDOGlRcXRHMGhnAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9UUM4aVFxdEcwaGcAB3lvdXR1YmUAAAAAAAAAAA==", "noReplace": false, "startTime": "0"}
-2022-03-13 07:21:19.642  INFO 282671 --- [main] lavalink.server.Launcher                 : 
-
-[32m       .  [31m _                  _ _       _    [32m__ _ _
-[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
-[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
-[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
-[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
-[0m    =========================================[32m/_/_/_/[0m
-
-	Version:        3.4
-	Build:          1257
-	Build time:     26.10.2021 14:18:37 UTC
-	Branch          master
-	Commit:         a364833
-	Commit time:    26.10.2021 14:15:20 UTC
-	JVM:            17.0.1
-	Lavaplayer      1.3.96-original
-
-2022-03-13 07:21:19.740  INFO 282671 --- [main] lavalink.server.Launcher                 : Starting Launcher on athena with PID 282671 (/home/ubuntu/Athena/lavalink/LavalinkPatch.jar started by ubuntu in /home/ubuntu/Athena/lavalink)
-2022-03-13 07:21:19.740  INFO 282671 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
-2022-03-13 07:21:19.825  WARN 282671 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2022-03-13 07:21:20.943  WARN 282671 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
-2022-03-13 07:21:20.965  INFO 282671 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
-2022-03-13 07:21:20.965  INFO 282671 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1174 ms
-2022-03-13 07:21:21.645  INFO 282671 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
-2022-03-13 07:21:21.784  INFO 282671 --- [main] lavalink.server.config.KoeConfiguration  : OS: Linux, Arch: aarch64
-2022-03-13 07:21:21.785  WARN 282671 --- [main] lavalink.server.config.KoeConfiguration  : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
-2022-03-13 07:21:21.802  WARN 282671 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
-2022-03-13 07:21:22.054  INFO 282671 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-13 07:21:22.336  INFO 282671 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
-2022-03-13 07:21:22.343  INFO 282671 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
-2022-03-13 07:21:22.382  INFO 282671 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 2333 (http) with context path ''
-2022-03-13 07:21:22.385  INFO 282671 --- [main] lavalink.server.Launcher                 : Started Launcher in 3.158 seconds (JVM running for 3.565)
-2022-03-13 07:21:22.386  INFO 282671 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/freyacodes/Lavalink/issues/295
-2022-03-13 07:21:26.702  INFO 282671 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-03-13 07:21:26.703  INFO 282671 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-03-13 07:21:26.709  INFO 282671 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2022-03-13 07:21:26.726  INFO 282671 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:58790
-2022-03-13 07:21:26.781  INFO 282671 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Connection successfully established
-2022-03-13 07:21:26.781  WARN 282671 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
-2022-03-13 07:21:49.670  INFO 282797 --- [main] lavalink.server.Launcher                 : 
-
-[32m       .  [31m _                  _ _       _    [32m__ _ _
-[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
-[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
-[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
-[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
-[0m    =========================================[32m/_/_/_/[0m
-
-	Version:        3.4
-	Build:          1257
-	Build time:     26.10.2021 14:18:37 UTC
-	Branch          master
-	Commit:         a364833
-	Commit time:    26.10.2021 14:15:20 UTC
-	JVM:            17.0.1
-	Lavaplayer      1.3.96-original
-
-2022-03-13 07:21:49.766  INFO 282797 --- [main] lavalink.server.Launcher                 : Starting Launcher on athena with PID 282797 (/home/ubuntu/Athena/lavalink/LavalinkPatch.jar started by ubuntu in /home/ubuntu/Athena/lavalink)
-2022-03-13 07:21:49.766  INFO 282797 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
-2022-03-13 07:21:49.855  WARN 282797 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2022-03-13 07:21:50.946  WARN 282797 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
-2022-03-13 07:21:50.968  INFO 282797 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
-2022-03-13 07:21:50.968  INFO 282797 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1151 ms
-2022-03-13 07:21:51.641  INFO 282797 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
-2022-03-13 07:21:51.781  INFO 282797 --- [main] lavalink.server.config.KoeConfiguration  : OS: Linux, Arch: aarch64
-2022-03-13 07:21:51.781  WARN 282797 --- [main] lavalink.server.config.KoeConfiguration  : This system and architecture appears to not support native audio sending! GC pauses may cause your bot to stutter during playback.
-2022-03-13 07:21:51.798  WARN 282797 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
-2022-03-13 07:21:52.022  INFO 282797 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-13 07:21:52.309  INFO 282797 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
-2022-03-13 07:21:52.316  INFO 282797 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
-2022-03-13 07:21:52.356  INFO 282797 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 2333 (http) with context path ''
-2022-03-13 07:21:52.359  INFO 282797 --- [main] lavalink.server.Launcher                 : Started Launcher in 3.111 seconds (JVM running for 3.514)
-2022-03-13 07:21:52.361  INFO 282797 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/freyacodes/Lavalink/issues/295
-2022-03-13 07:21:56.698  INFO 282797 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-03-13 07:21:56.699  INFO 282797 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-03-13 07:21:56.704  INFO 282797 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2022-03-13 07:21:56.728  INFO 282797 --- [XNIO-1 task-1] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:58796
-2022-03-13 07:21:56.787  INFO 282797 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Connection successfully established
-2022-03-13 07:21:56.787  WARN 282797 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 07:22:57.982  INFO 308482 --- [XNIO-1 task-27] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=TQ8WlA2GXbk&list=PL44EMzEAC9i2jxNg8d312Db6hFk7ljazr&index=1"
+2022-03-16 07:22:58.164  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist main
+2022-03-16 07:22:59.578  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "stop", "guildId": "800843827375898625"}
+2022-03-16 07:25:14.514  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /10.0.0.156:46174 -- CloseStatus[code=1006, reason=]
+2022-03-16 07:25:14.515  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-03-16 07:30:47.840  INFO 308482 --- [XNIO-1 task-29] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:46250
+2022-03-16 07:30:47.880  INFO 308482 --- [XNIO-1 task-29] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 07:30:47.880  WARN 308482 --- [XNIO-1 task-29] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 07:30:53.515  INFO 308482 --- [XNIO-1 task-30] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=TQ8WlA2GXbk"
+2022-03-16 07:30:53.648  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded track Official髭男dism - Pretender［Official Video］
+2022-03-16 07:30:53.656  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAngIAMk9mZmljaWFs6aut55S3ZGlzbSAtIFByZXRlbmRlcu+8u09mZmljaWFsIFZpZGVv77y9ABJPZmZpY2lhbOmrreeUt2Rpc20AAAAAAAUggAALVFE4V2xBMkdYYmsAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1UUThXbEEyR1hiawAHeW91dHViZQAAAAAAAAAA", "noReplace": false, "startTime": "0"}
+2022-03-16 07:30:53.844  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "40b9d2b6013de9a0b5c2fcb9cedb433f", "event": {"token": "cdd142dd01b2468d", "guild_id": "800843827375898625", "endpoint": "us-west835.discord.media:443"}}
+2022-03-16 07:31:44.636  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "stop", "guildId": "800843827375898625"}
+2022-03-16 07:31:44.643  INFO 308482 --- [XNIO-1 task-32] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=g8dmQs2Fzns&list=PL44EMzEAC9i2jxNg8d312Db6hFk7ljazr&index=2"
+2022-03-16 07:31:44.809  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist main
+2022-03-16 07:32:57.277  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /10.0.0.156:46250 -- CloseStatus[code=1006, reason=]
+2022-03-16 07:32:57.278  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-03-16 07:33:00.989  INFO 308482 --- [XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:46274
+2022-03-16 07:33:01.008  INFO 308482 --- [XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 07:33:01.009  WARN 308482 --- [XNIO-1 task-2] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 07:33:03.287  INFO 308482 --- [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:>?p https://www.youtube.com/watch?v=g8dmQs2Fzns&list=PL44EMzEAC9i2jxNg8d312Db6hFk7ljazr&index=2"
+2022-03-16 07:33:03.657  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "dc42a33976eef6df8a59f2ad64b01907", "event": {"token": "cdd142dd01b2468d", "guild_id": "800843827375898625", "endpoint": "us-west835.discord.media:443"}}
+2022-03-16 07:33:03.668  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : No matches found
+2022-03-16 07:33:11.526  INFO 308482 --- [XNIO-1 task-5] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=g8dmQs2Fzns&list=PL44EMzEAC9i2jxNg8d312Db6hFk7ljazr&index=2"
+2022-03-16 07:33:11.677  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist main
+2022-03-16 07:33:21.779  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /10.0.0.156:46274 -- CloseStatus[code=1006, reason=]
+2022-03-16 07:33:21.780  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-03-16 07:33:28.808  INFO 308482 --- [XNIO-1 task-7] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:46288
+2022-03-16 07:33:28.821  INFO 308482 --- [XNIO-1 task-7] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 07:33:28.821  WARN 308482 --- [XNIO-1 task-7] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 07:33:39.169  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : Connection closed from /10.0.0.156:46288 -- CloseStatus[code=1006, reason=]
+2022-03-16 07:33:39.169  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-03-16 07:33:42.769  INFO 308482 --- [XNIO-1 task-8] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:46294
+2022-03-16 07:33:42.773  INFO 308482 --- [XNIO-1 task-8] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 07:33:42.773  WARN 308482 --- [XNIO-1 task-8] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 07:33:43.938  INFO 308482 --- [XNIO-1 task-9] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=g8dmQs2Fzns&list=PL44EMzEAC9i2jxNg8d312Db6hFk7ljazr&index=2"
+2022-03-16 07:33:44.088  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "9a84611e95c392841181b35f78aabb93", "event": {"token": "cdd142dd01b2468d", "guild_id": "800843827375898625", "endpoint": "us-west835.discord.media:443"}}
+2022-03-16 07:33:44.105  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist main
+2022-03-16 07:34:02.774  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /10.0.0.156:46294 -- CloseStatus[code=1006, reason=]
+2022-03-16 07:34:02.775  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-03-16 07:34:06.844  INFO 308482 --- [XNIO-1 task-11] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:46304
+2022-03-16 07:34:06.847  INFO 308482 --- [XNIO-1 task-11] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 07:34:06.847  WARN 308482 --- [XNIO-1 task-11] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 07:34:10.118  INFO 308482 --- [XNIO-1 task-12] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=g8dmQs2Fzns&list=PL44EMzEAC9i2jxNg8d312Db6hFk7ljazr&index=2"
+2022-03-16 07:34:10.259  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "6e2f089350f2fa52caab04600018a4da", "event": {"token": "cdd142dd01b2468d", "guild_id": "800843827375898625", "endpoint": "us-west835.discord.media:443"}}
+2022-03-16 07:34:10.270  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist main
+2022-03-16 07:36:23.967  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : Connection closed from /10.0.0.156:46304 -- CloseStatus[code=1006, reason=]
+2022-03-16 07:36:23.970  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-03-16 07:36:28.115  INFO 308482 --- [XNIO-1 task-14] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:46330
+2022-03-16 07:36:28.125  INFO 308482 --- [XNIO-1 task-14] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 07:36:28.126  WARN 308482 --- [XNIO-1 task-14] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 07:36:39.435  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /10.0.0.156:46330 -- CloseStatus[code=1006, reason=]
+2022-03-16 07:36:39.436  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-03-16 07:36:42.773  INFO 308482 --- [XNIO-1 task-15] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:46336
+2022-03-16 07:36:42.786  INFO 308482 --- [XNIO-1 task-15] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 07:36:42.786  WARN 308482 --- [XNIO-1 task-15] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 07:36:45.578  INFO 308482 --- [XNIO-1 task-16] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=g8dmQs2Fzns&list=PL44EMzEAC9i2jxNg8d312Db6hFk7ljazr&index=2"
+2022-03-16 07:36:45.760  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist main
+2022-03-16 07:36:45.925  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "9f4ff73df635e5b1e459657049074f6e", "event": {"token": "cdd142dd01b2468d", "guild_id": "800843827375898625", "endpoint": "us-west835.discord.media:443"}}
+2022-03-16 07:37:13.463  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : Connection closed from /10.0.0.156:46336 -- CloseStatus[code=1006, reason=]
+2022-03-16 07:37:13.463  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-03-16 07:37:17.049  INFO 308482 --- [XNIO-1 task-18] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:46348
+2022-03-16 07:37:17.053  INFO 308482 --- [XNIO-1 task-18] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 07:37:17.053  WARN 308482 --- [XNIO-1 task-18] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 07:37:17.927  INFO 308482 --- [XNIO-1 task-19] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=g8dmQs2Fzns&list=PL44EMzEAC9i2jxNg8d312Db6hFk7ljazr&index=2"
+2022-03-16 07:37:18.068  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "93ecfc7d26bdf1be61b82cc8068dff5e", "event": {"token": "cdd142dd01b2468d", "guild_id": "800843827375898625", "endpoint": "us-west835.discord.media:443"}}
+2022-03-16 07:37:18.074  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist main
+2022-03-16 07:37:41.878  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : Connection closed from /10.0.0.156:46348 -- CloseStatus[code=1006, reason=]
+2022-03-16 07:37:41.878  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-03-16 07:37:49.840  INFO 308482 --- [XNIO-1 task-21] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:46358
+2022-03-16 07:37:49.845  INFO 308482 --- [XNIO-1 task-21] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 07:37:49.845  WARN 308482 --- [XNIO-1 task-21] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 07:37:52.353  INFO 308482 --- [XNIO-1 task-22] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=g8dmQs2Fzns&list=PL44EMzEAC9i2jxNg8d312Db6hFk7ljazr&index=2"
+2022-03-16 07:37:52.514  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist main
+2022-03-16 07:37:52.520  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAngIAMk9mZmljaWFs6aut55S3ZGlzbSAtIFByZXRlbmRlcu+8u09mZmljaWFsIFZpZGVv77y9ABJPZmZpY2lhbOmrreeUt2Rpc20AAAAAAAUggAALVFE4V2xBMkdYYmsAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1UUThXbEEyR1hiawAHeW91dHViZQAAAAAAAAAA", "noReplace": false, "startTime": "0"}
+2022-03-16 07:37:52.524  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "cfba42255e460e61a8c7da43a766f82b", "event": {"token": "cdd142dd01b2468d", "guild_id": "800843827375898625", "endpoint": "us-west835.discord.media:443"}}
+2022-03-16 07:38:54.131  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "stop", "guildId": "800843827375898625"}
+2022-03-16 07:38:54.142  INFO 308482 --- [XNIO-1 task-24] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=g8dmQs2Fzns"
+2022-03-16 07:38:54.230  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded track Black Clover - Opening 13 Full 『Grandeur』By Snow Man
+2022-03-16 07:42:15.127  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /10.0.0.156:46358 -- CloseStatus[code=1006, reason=]
+2022-03-16 07:42:15.128  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-03-16 07:42:18.862  INFO 308482 --- [XNIO-1 task-26] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:46390
+2022-03-16 07:42:18.879  INFO 308482 --- [XNIO-1 task-26] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 07:42:18.879  WARN 308482 --- [XNIO-1 task-26] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 07:42:19.986  INFO 308482 --- [XNIO-1 task-27] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=x3SxEOvAOEg"
+2022-03-16 07:42:20.063  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded track clown horn - sound effect
+2022-03-16 07:42:20.324  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "8d7ebca16e902bc0c14d4dab0690c639", "event": {"token": "cdd142dd01b2468d", "guild_id": "800843827375898625", "endpoint": "us-west835.discord.media:443"}}
+2022-03-16 07:42:45.113  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /10.0.0.156:46390 -- CloseStatus[code=1006, reason=]
+2022-03-16 07:42:45.113  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-03-16 07:42:48.448  INFO 308482 --- [XNIO-1 task-29] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:46400
+2022-03-16 07:42:48.452  INFO 308482 --- [XNIO-1 task-29] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 07:42:48.452  WARN 308482 --- [XNIO-1 task-29] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 07:42:54.345  INFO 308482 --- [XNIO-1 task-30] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=x3SxEOvAOEg"
+2022-03-16 07:42:54.411  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded track clown horn - sound effect
+2022-03-16 07:42:54.504  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "56e8c9040ca445fe37c5105f403838c7", "event": {"token": "cdd142dd01b2468d", "guild_id": "800843827375898625", "endpoint": "us-west835.discord.media:443"}}
+2022-03-16 07:43:08.785  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : Connection closed from /10.0.0.156:46400 -- CloseStatus[code=1006, reason=]
+2022-03-16 07:43:08.785  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-03-16 07:43:12.326  INFO 308482 --- [XNIO-1 task-32] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:46412
+2022-03-16 07:43:12.330  INFO 308482 --- [XNIO-1 task-32] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 07:43:12.330  WARN 308482 --- [XNIO-1 task-32] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 07:43:12.367  INFO 308482 --- [XNIO-1 task-1] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=x3SxEOvAOEg"
+2022-03-16 07:43:12.445  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded track clown horn - sound effect
+2022-03-16 07:43:12.534  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "1c8ce04f1e26e5fbb95cd0ab6ca1f27e", "event": {"token": "cdd142dd01b2468d", "guild_id": "800843827375898625", "endpoint": "us-west835.discord.media:443"}}
+2022-03-16 07:43:24.406  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : Connection closed from /10.0.0.156:46412 -- CloseStatus[code=1006, reason=]
+2022-03-16 07:43:24.407  INFO 308482 --- [XNIO-1 I/O-4] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-03-16 07:43:27.672  INFO 308482 --- [XNIO-1 task-3] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /10.0.0.156:46422
+2022-03-16 07:43:27.675  INFO 308482 --- [XNIO-1 task-3] lavalink.server.io.SocketServer          : Connection successfully established
+2022-03-16 07:43:27.675  WARN 308482 --- [XNIO-1 task-3] lavalink.server.io.SocketServer          : Library developers: Please specify a 'Client-Name' header. User agent: Python/3.8 aiohttp/3.7.4.post0
+2022-03-16 07:43:31.144  INFO 308482 --- [XNIO-1 task-4] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=x3SxEOvAOEg"
+2022-03-16 07:43:31.208  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded track clown horn - sound effect
+2022-03-16 07:43:31.211  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAgQIAGWNsb3duIGhvcm4gLSBzb3VuZCBlZmZlY3QADlN5ZW50aWZpa0ZpbG1zAAAAAAAAD6AAC3gzU3hFT3ZBT0VnAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9eDNTeEVPdkFPRWcAB3lvdXR1YmUAAAAAAAAAAA==", "noReplace": false, "startTime": "0"}
+2022-03-16 07:43:31.295  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "1564f4c99a07109062ae151b21aa4126", "event": {"token": "cdd142dd01b2468d", "guild_id": "800843827375898625", "endpoint": "us-west835.discord.media:443"}}
+2022-03-16 07:44:48.783  INFO 308482 --- [XNIO-1 task-6] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=x3SxEOvAOEg"
+2022-03-16 07:44:48.869  INFO 308482 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded track clown horn - sound effect
+2022-03-16 07:44:48.873  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "play", "guildId": "800843827375898625", "track": "QAAAgQIAGWNsb3duIGhvcm4gLSBzb3VuZCBlZmZlY3QADlN5ZW50aWZpa0ZpbG1zAAAAAAAAD6AAC3gzU3hFT3ZBT0VnAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9eDNTeEVPdkFPRWcAB3lvdXR1YmUAAAAAAAAAAA==", "noReplace": false, "startTime": "0"}
+2022-03-16 07:44:48.966  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op": "voiceUpdate", "guildId": "800843827375898625", "sessionId": "1564f4c99a07109062ae151b21aa4126", "event": {"token": "843ee3f4c9eec8ed", "guild_id": "800843827375898625", "endpoint": "us-west9197.discord.media:443"}}
+2022-03-16 07:47:46.423  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /10.0.0.156:46422 -- CloseStatus[code=1006, reason=]
+2022-03-16 07:47:46.423  INFO 308482 --- [XNIO-1 I/O-2] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2022-03-16 07:47:49.713  INFO 308482 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-16 07:47:49.716  INFO 308482 --- [Thread-1] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2022-03-16 07:47:49.727  INFO 308482 --- [Thread-1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'

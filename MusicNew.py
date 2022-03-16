@@ -33,11 +33,26 @@ import json
 
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
+import validators
 
 import time
 import asyncio
 import re
 import socket
+
+from urllib.parse import urlparse, parse_qs
+
+def get_id(url):
+    u_pars = urlparse(url)
+    quer_v = parse_qs(u_pars.query).get('v')
+    if quer_v:
+        return quer_v[0]
+    pth = u_pars.path.split('/')
+    if pth:
+        return pth[-1]
+
+
+
 
 
 global GLOBAL_RATE
@@ -174,11 +189,10 @@ class Music(commands.Cog):
         tracks = None
         
         query = player.queue.pop(0)
-        regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
-        url = re.findall(regex, query)  
+        #regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
+        #url = re.findall(regex, query)  
 
-        
-        if(query == url) or (player.mode == ""):
+        if(validators.url(query)):
             tracks = await self.bot.wavelink.get_tracks(f'{query}')
         else:
             tracks = await self.bot.wavelink.get_tracks(f'{player.mode}:{query}')
@@ -191,7 +205,11 @@ class Music(commands.Cog):
             tracks = await self.bot.wavelink.SearchableTrack.search(query)
         '''
         player.updateAvg(1)
-        return tracks, query
+
+        if(type(tracks) == wavelink.player.TrackPlaylist):
+            return tracks.tracks[0], query
+        else:
+            return tracks[0], query
 
     @commands.command(name='connect', aliases=["join", "summon"])
     async def _connect(self, ctx, *, channel: discord.VoiceChannel=None):
@@ -226,13 +244,17 @@ class Music(commands.Cog):
         if player.is_playing:        
             await ctx.send(embed=generateEmbed(ctx, '', f"Enqueued the query '*{query}*'. [{ctx.author.mention}]"))
 
-        try:
-            t = player.sp.track(query)
-            player.queue.append(f"{t['artists'][0]['name']} {t['name']}")
-            
-        except:
+        #Check if it is a spotify link
+        spot = re.findall(r"[\bhttps://open.\b]*spotify[\b.com\b]*[/:]*track[/:]*[A-Za-z0-9?=]+", query)
+        if(spot):
+            try:
+                t = player.sp.track(query)
+                player.queue.append(f"{t['artists'][0]['name']} {t['name']}")
+                
+            except:
+                pass
+        else:
             player.queue.append(query)
-            pass
 
         if not player.is_playing:
             await self.coroutinePlay(player)
@@ -345,7 +367,7 @@ class Music(commands.Cog):
             await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author.mention} set the volume to **{arg}%**\n' +
                                                f'[{highlight}](https://www.youtube.com/watch?v=dQw4w9WgXcQ){nonhighlight}'))
 
-    @commands.command(name='seek')
+    @commands.command(name='seek', description="Seeks via seconds.")
     async def _seek(self, ctx, arg=0):
         player = self.bot.wavelink.get_player(ctx.guild.id, cls=NewPlayer)
         if await self.userConnectedCheck(ctx) and await self.playerConnectedCheck(ctx):
@@ -376,7 +398,9 @@ class Music(commands.Cog):
                 highlight = BAR_ORIGINAL[:c]
                 nonhighlight = BAR_ORIGINAL[c:]
 
-                uri = player.current.uri.replace("https://www.youtube.com/watch?v=", "")
+                #uri = player.current.uri.replace("https://www.youtube.com/watch?v=", "")
+                uri = get_id(player.current.uri)
+            
                 e = discord.Embed(title = 'Currently playing:',
                                                     thumbnail = f'https://img.youtube.com/vi/{uri}/maxresdefault.jpg',
                                                     description = f'```css\n{player.current.title}\n```\n\n',
@@ -490,7 +514,7 @@ class Music(commands.Cog):
                                                   colour = 1973790))
                 pass
         
-        player.current = tracks[0]
+        player.current = tracks
         await player.play(player.current)
     
     async def on_node_event(self, event):

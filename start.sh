@@ -14,7 +14,7 @@ sleep 5
 
 echo "Starting Athena..."
 
-nohup python3 bot.py > lavalink/logs/botlog.txt & 
+nohup python3 -u bot.py > lavalink/logs/botlog.txt & 
 pyPID=$!
 
 echo "bot.py PID: $pyPID"

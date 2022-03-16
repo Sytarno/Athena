@@ -1,0 +1,2 @@
+Expected id of type track but found type www.youtube.com https://www.youtube.com/watch?v=YsSShYaKOvk
+HTTP Error for GET to https://api.spotify.com/v1/tracks/watch with Params: {'market': None} returned 400 due to invalid id
