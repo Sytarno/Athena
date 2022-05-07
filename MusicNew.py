@@ -484,7 +484,7 @@ class Music(commands.Cog):
     
     async def await_disconnect(self, player: NewPlayer):
         try:
-            await asyncio.sleep(60)
+            await asyncio.sleep(120)
             await player.disconnect()
         except asyncio.CancelledError:
             raise

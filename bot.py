@@ -73,16 +73,68 @@ def generateEmbed(ctx, title, description=""):
     )
     return embed
 
+def get_prefix(bot, msg):
+    try:
+        with open(dPATH + '.prefix.pkl', "rb") as ppkl:
+            prefixes = pickle.load(ppkl)
+
+        return prefixes[str(msg.guild.id)]
+    except:
+        return ">?"
+
 #COMMANDS-------------------------------------------------------------
 class AthenaCore(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.desc = 'Main functionality for Athena.'
 
+    @commands.command(name="prefix", description="Changes the prefix for the server. Accepts up to 3 sequential characters.")
+    async def _prefixChange(self, ctx, *, message: str):
+        if message:
+            message = message.replace(" ", "") #trim spaces
+            if(len(message) > 3):
+                message = message[:3]
 
+            async def button_callback(interact):
+                ci = interact.data['custom_id']
+                b1.disabled=True
+                b2.disabled=True
+                if(ci == "0"):
+                    try:
+                        with open(dPATH + '.prefix.pkl', "rb") as ppkl:
+                            prefixes = pickle.load(ppkl)
+                    except:
+                        print("Unable to load custom prefix file. Creating new one.")
+                        prefixes = {}
 
+                    prefixes[str(ctx.guild.id)] = message #Default prefix = >?
+
+                    ppkl = open(dPATH + '.prefix.pkl', "wb")
+                    pickle.dump(prefixes, ppkl)
+                    
+                    await interact.response.edit_message(embed=genEmbed('', f'The prefix for this server is now **{message}**.'), view=view)
+                else:
+                    await interact.response.edit_message(embed=genEmbed('', f'The prefix for this server was not changed.'), view=view)
+
+            b1 = Button(label="Yes", style=discord.ButtonStyle.green, custom_id="0")
+            b2 = Button(label="Decline", custom_id="1")
+            b1.callback = button_callback
+            b2.callback = button_callback
+
+            view=View()
+            view.add_item(b1)
+            view.add_item(b2)
+
+            await ctx.send(embed=genEmbed('', f'Would you like to change the server prefix to **{message}**?'), view=view)
+
+            #resp = await self.bot.wait_for("button_click")
+            #if resp.channel == ctx.channel:
+            #    await resp.respond(
+            #        type=InteractionType.ChannelMessageWithSource
+            #    )
+        else:
+            await ctx.send(embed=genEmbed('', f'{ctx.author.mention}, you did not specify a prefix.'))       
     
-     
     @commands.command(name="status")
     async def _statusCheck(self, ctx):
         user = await self.bot.fetch_user(AUTHOR)
@@ -454,6 +506,10 @@ class MudaeHelper(commands.Cog):
 #--MAIN READER---------------------------------------------------------
 @bot.event
 async def on_message(msg):
+    if(msg.author != bot.user and msg.mentions):
+        if len(msg.mentions) == 1 and msg.mentions[0] == bot.user:
+            await msg.channel.send(embed=genEmbed('', f'The current prefix for this server is **{get_prefix(bot, message)}**\n'))
+
     if validChannel(msg.channel) or "channel" in msg.content.lower():
         await bot.process_commands(msg)
         
