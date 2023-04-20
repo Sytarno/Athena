@@ -3,7 +3,7 @@
 echo "Starting lavalink server..."
 
 cd lavalink
-nohup java -jar LavalinkPatch.jar > logs/lavalog.txt &
+nohup java -jar Lavalink.jar > logs/lavalog.txt &
 javaPID=$!
 
 echo "Lavalink PID: $javaPID"

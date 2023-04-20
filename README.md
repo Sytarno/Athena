@@ -9,3 +9,6 @@ however, in order for youtube pull/push requests, lavalink.jar in the folder lav
 
 musicNew.py is the currently used cog for youtube through lavalink.
 musicPl.py is deprecated and only serves as a backup; uses ffmpeg.
+
+# Known needed modules
+pip install discord-py-slash-command

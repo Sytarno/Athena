@@ -19,7 +19,7 @@ def generateEmbed(ctx: commands.Context, title, description=""):
 class Exec(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.desc = "Allows execution of code through chat"
+        self.desc = "Allows execution of code through chat."
         
 
     @commands.command(name='run', description='Make sure to highlight code. Context is saved as "ctx"')
