@@ -478,7 +478,7 @@ class Music(commands.Cog):
         await msg.edit(embed=generateEmbed(ctx, '', f'{ctx.author.mention} installed a custom filter. View it using view_eq.'))
         
     
-    async def send_song_info(self, player: NewPlayer, track: wavelink.Track):
+    async def send_song_info(self, player: NewPlayer, track: wavelink.GenericTrack):
         await player.send(embed=discord.Embed(description = '**Currently playing:**\n' + f'```css\n{track.title}\n```',
                                                   colour = 1973790))
     

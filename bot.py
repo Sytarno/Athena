@@ -21,7 +21,9 @@ import re
 
 dPATH = "data/"
 
-bot = commands.Bot(command_prefix = '>?')
+intents = discord.Intents.all()
+
+bot = commands.Bot(command_prefix = '>?', intents=intents)
 PARSE = open(dPATH + '.env.txt').read().split('\n')
 TOKEN = PARSE[0]
 AUTHOR = int(PARSE[1])
@@ -576,20 +578,20 @@ async def on_voice_state_update(member, before, after):
     except:
         pass
 
-bot.add_cog(AthenaCore(bot))
-bot.add_cog(VoiceCMD(bot))
-bot.add_cog(MudaeHelper(bot))
+await bot.add_cog(AthenaCore(bot))
+await bot.add_cog(VoiceCMD(bot))
+#await bot.add_cog(MudaeHelper(bot))
 
 #from MusicPl import *
 #bot.add_cog(MusicPlayer(bot))
 
-from MusicNew import *
-bot.add_cog(Music(bot))
+#from MusicNew import *
+#bot.add_cog(Music(bot))
 
-from recognition import *
-bot.add_cog(NLP(bot))
+#from recognition import *
+#bot.add_cog(NLP(bot))
 
-from Exec import *
-bot.add_cog(Exec(bot))
+#from Exec import *
+#bot.add_cog(Exec(bot))
 
 bot.run(TOKEN)
