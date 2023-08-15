@@ -10,11 +10,12 @@ Wavelink and pycord have changed significantly in the last 2 years, so the music
 This bot will not run on its own. .env.txt is a missing file that contains the token and other private info I will not divulge.
 
 In order to start this bot, add a new .env.txt (the extension is mandatory) with the following information line-separated:
-; bot token
-; author id
-; bots own id (find on developer portal)
+- bot token
+- author id
+- bots own id (find on developer portal)
 
-(EXTRAS)
+# Log
+
 bot.py is the main core that is required to run. 
 however, in order for youtube pull/push requests, lavalink.jar in the folder lavalink needs to run concurrently.
 
