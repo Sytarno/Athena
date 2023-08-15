@@ -36,7 +36,6 @@ with open(dPATH + '.authorizedChannels.txt', 'r') as in_file:
 
 def validChannel(channel):
     authorizedChannels = read(dPATH + '.authorizedChannels.txt')
-    print(authorizedChannels)
     return str(channel.id) in authorizedChannels
 
 def embedChannel(channel):
@@ -64,6 +63,21 @@ except:
 
 @bot.event
 async def on_ready():
+    await bot.add_cog(AthenaCore(bot))
+    await bot.add_cog(VoiceCMD(bot))
+    #await bot.add_cog(MudaeHelper(bot))
+
+    #from MusicPl import *
+    #bot.add_cog(MusicPlayer(bot))
+
+    #from MusicNew import *
+    #bot.add_cog(Music(bot))
+
+    #from recognition import *
+    #bot.add_cog(NLP(bot))
+
+    #from Exec import *
+    #bot.add_cog(Exec(bot))
     print(f'{bot.user} is now Online.')
 
 #EXTRA----------------------------------------------------------------
@@ -306,7 +320,7 @@ class VoiceCMD(commands.Cog):
 
     @commands.command(name="pRemove")
     async def _removeRole(self, ctx, msg=1):
-        print(ctx.guild.roles)
+        #print(ctx.guild.roles)
         
         user= ctx.message.author
         role = (discord.utils.get(user.guild.roles, id=msg))
@@ -324,7 +338,7 @@ class VoiceCMD(commands.Cog):
         user = ctx.message.author
         s = ' '.join(msg)
         role = discord.utils.get(user.guild.roles, name=s)
-        print(s)
+        #print(s)
         def check(author):
             def inner_check(message):
                 return message.author == author
@@ -349,7 +363,7 @@ class VoiceCMD(commands.Cog):
                     await ctx.send(embed=generateEmbed(ctx, '', f'Please state the r, g, b value you would like to change it to.'))
                     color = await bot.wait_for('message', check=check(ctx.author), timeout=30)
                     colorT = tuple(map(int, color.content.split(', '))) 
-                    print(colorT)
+                    #print(colorT)
                     if(colorT):
                         await role.edit(colour = discord.Colour.from_rgb(colorT[0], colorT[1], colorT[2]))
                         await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author} changed the color of **{role}** to **({colorT[0]}, {colorT[1]}, {colorT[2]})**'))
@@ -577,21 +591,5 @@ async def on_voice_state_update(member, before, after):
                     await before.channel.delete()
     except:
         pass
-
-await bot.add_cog(AthenaCore(bot))
-await bot.add_cog(VoiceCMD(bot))
-#await bot.add_cog(MudaeHelper(bot))
-
-#from MusicPl import *
-#bot.add_cog(MusicPlayer(bot))
-
-#from MusicNew import *
-#bot.add_cog(Music(bot))
-
-#from recognition import *
-#bot.add_cog(NLP(bot))
-
-#from Exec import *
-#bot.add_cog(Exec(bot))
 
 bot.run(TOKEN)

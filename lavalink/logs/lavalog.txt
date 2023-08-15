@@ -1,0 +1,133 @@
+2023-08-15 11:19:43.071  INFO 1837 --- [           main] lavalink.server.Launcher                 : Starting Launcher using Java 11.0.20 on athena-compact with PID 1837 (/home/ubuntu/Athena/lavalink/Lavalink.jar started by ubuntu in /home/ubuntu/Athena/lavalink)
+2023-08-15 11:19:43.075  INFO 1837 --- [           main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2023-08-15 11:19:50.578  INFO 1837 --- [           main] lavalink.server.Launcher                 : Started Launcher in 11.697 seconds (JVM running for 14.911)
+2023-08-15 11:19:50.582  INFO 1837 --- [           main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/freyacodes/Lavalink/issues/295
+2023-08-15 11:19:50.984  INFO 1837 --- [           main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        3.7.5
+	Build time:     06.03.2023 12:02:05 UTC
+	Branch          HEAD
+	Commit:         c00286d
+	Commit time:    06.03.2023 11:59:46 UTC
+	JVM:            11.0.20
+	Lavaplayer      1.4.0-original
+
+2023-08-15 11:19:50.997  INFO 1837 --- [           main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2023-08-15 11:19:55.271  WARN 1837 --- [           main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-08-15 11:19:55.374  INFO 1837 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-08-15 11:19:55.375  INFO 1837 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4301 ms
+2023-08-15 11:19:55.771  WARN 1837 --- [           main] l.server.config.SentryConfiguration      : Turning off sentry
+2023-08-15 11:19:56.885  INFO 1837 --- [           main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2023-08-15 11:19:59.479  INFO 1837 --- [           main] lavalink.server.config.KoeConfiguration  : OS: LINUX, Arch: X86_64
+2023-08-15 11:19:59.481  INFO 1837 --- [           main] lavalink.server.config.KoeConfiguration  : Enabling JDA-NAS
+2023-08-15 11:19:59.488  INFO 1837 --- [           main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2023-08-15 11:19:59.495  INFO 1837 --- [           main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2023-08-15 11:20:01.687  INFO 1837 --- [           main] io.undertow                              : starting server: Undertow - 2.2.16.Final
+2023-08-15 11:20:01.776  INFO 1837 --- [           main] org.xnio                                 : XNIO version 3.8.6.Final
+2023-08-15 11:20:01.787  INFO 1837 --- [           main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.6.Final
+2023-08-15 11:20:02.387  INFO 1837 --- [           main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2023-08-15 11:20:02.593  INFO 1837 --- [           main] io.undertow                              : stopping server: Undertow - 2.2.16.Final
+2023-08-15 11:20:02.595  WARN 1837 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Undertow
+2023-08-15 11:20:02.670  INFO 1837 --- [           main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2023-08-15 11:20:02.682 ERROR 1837 --- [           main] lavalink.server.Launcher                 : Application failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Undertow
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.18.jar!/:5.3.18]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.18.jar!/:5.3.18]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.18.jar!/:5.3.18]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.18.jar!/:5.3.18]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.18.jar!/:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.18.jar!/:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.18.jar!/:5.3.18]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:164) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at lavalink.server.Launcher.launchMain(Launcher.kt:165) ~[classes!/:na]
+	at lavalink.server.Launcher.main(Launcher.kt:127) ~[classes!/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88) ~[Lavalink.jar:na]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Undertow
+	at org.springframework.boot.web.embedded.undertow.UndertowWebServer.start(UndertowWebServer.java:130) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:43) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.18.jar!/:5.3.18]
+	... 22 common frames omitted
+Caused by: java.lang.RuntimeException: java.net.BindException: Cannot assign requested address
+	at io.undertow.Undertow.start(Undertow.java:254) ~[undertow-core-2.2.16.Final.jar!/:2.2.16.Final]
+	at org.springframework.boot.web.embedded.undertow.UndertowWebServer.start(UndertowWebServer.java:116) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	... 24 common frames omitted
+Caused by: java.net.BindException: Cannot assign requested address
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.bind(Net.java:459) ~[na:na]
+	at java.base/sun.nio.ch.Net.bind(Net.java:448) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[na:na]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:178) ~[xnio-nio-3.8.6.Final.jar!/:3.8.6.Final]
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:310) ~[xnio-api-3.8.6.Final.jar!/:3.8.6.Final]
+	at io.undertow.Undertow.start(Undertow.java:196) ~[undertow-core-2.2.16.Final.jar!/:2.2.16.Final]
+	... 25 common frames omitted
+
+2023-08-15 11:20:02.685  INFO 1837 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-08-15 11:20:02.782 ERROR 1837 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Undertow
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.18.jar!/:5.3.18]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.18.jar!/:5.3.18]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.18.jar!/:5.3.18]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.18.jar!/:5.3.18]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.18.jar!/:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.18.jar!/:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.18.jar!/:5.3.18]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:164) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at lavalink.server.Launcher.launchMain(Launcher.kt:165) ~[classes!/:na]
+	at lavalink.server.Launcher.main(Launcher.kt:127) ~[classes!/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88) ~[Lavalink.jar:na]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Undertow
+	at org.springframework.boot.web.embedded.undertow.UndertowWebServer.start(UndertowWebServer.java:130) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:43) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.18.jar!/:5.3.18]
+	... 22 common frames omitted
+Caused by: java.lang.RuntimeException: java.net.BindException: Cannot assign requested address
+	at io.undertow.Undertow.start(Undertow.java:254) ~[undertow-core-2.2.16.Final.jar!/:2.2.16.Final]
+	at org.springframework.boot.web.embedded.undertow.UndertowWebServer.start(UndertowWebServer.java:116) ~[spring-boot-2.6.6.jar!/:2.6.6]
+	... 24 common frames omitted
+Caused by: java.net.BindException: Cannot assign requested address
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.bind(Net.java:459) ~[na:na]
+	at java.base/sun.nio.ch.Net.bind(Net.java:448) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[na:na]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:178) ~[xnio-nio-3.8.6.Final.jar!/:3.8.6.Final]
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:310) ~[xnio-api-3.8.6.Final.jar!/:3.8.6.Final]
+	at io.undertow.Undertow.start(Undertow.java:196) ~[undertow-core-2.2.16.Final.jar!/:2.2.16.Final]
+	... 25 common frames omitted
+
