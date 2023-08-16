@@ -61,17 +61,18 @@ except:
     print("Unable to load voiceLock pickle.")
     voiceLocks = {}
 
+from MusicWave import *
+
 @bot.event
 async def on_ready():
     await bot.add_cog(AthenaCore(bot))
     await bot.add_cog(VoiceCMD(bot))
     #await bot.add_cog(MudaeHelper(bot))
 
-    #from MusicPl import *
-    #bot.add_cog(MusicPlayer(bot))
-
     #from MusicNew import *
     #bot.add_cog(Music(bot))
+
+    await bot.add_cog(Music(bot))
 
     #from recognition import *
     #bot.add_cog(NLP(bot))

@@ -9,5 +9,5 @@ pip install -U py-cord --pre
 pip install Pillow
 pip install numpy
 pip install wavelink
-pip install spotipy
-pip install validators
+#pip install spotipy #assimilated into wavelink
+#pip install validators #no longer needed

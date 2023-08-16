@@ -19,7 +19,7 @@ pyPID=$!
 
 echo "bot.py PID: $pyPID"
 
-echo "Success! Appending output to lavalink/logs."
+echo "Appending output to lavalink/logs."
 
 echo "kill -9 $javaPID\nkill -9 $pyPID" > stop.sh
 chmod u+x stop.sh
