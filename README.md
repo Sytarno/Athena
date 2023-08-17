@@ -14,6 +14,8 @@ In order to start this bot, add a new .env.txt (the extension is mandatory) with
 - author id
 - bots own id (find on developer portal)
 
+Then run ./setup.sh in the cmd, followed by ./start.sh.
+
 # Log
 
 bot.py is the main core that is required to run. 
