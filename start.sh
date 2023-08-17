@@ -1,5 +1,8 @@
 #!/bin/sh
 
+echo "Attempting to close old runtime"
+./stop.sh
+
 echo "Starting lavalink server..."
 
 cd lavalink

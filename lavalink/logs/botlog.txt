@@ -1,32 +1,10 @@
-[2023-08-16 12:23:51] [INFO    ] discord.client: logging in using static token
-[2023-08-16 12:23:52] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 45d6f2528403fe31f4306adb900fd9ab).
+[2023-08-17 12:26:16] [INFO    ] discord.client: logging in using static token
+[2023-08-17 12:26:17] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 8ce4b56c4d63fe2c8a3b6638177f9079).
 Athena#4320 is now Online.
-An error occurred connecting to node: "Node(id="JemPafQvoHsy", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING)". Cannot connect to host 10.0.0.239:2333 ssl:default [Connect call failed ('10.0.0.239', 2333)]
-Node Node(id="JemPafQvoHsy", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING) websocket was unable to connect, retrying connection in: "1.311525467911987" seconds. 
-An error occurred connecting to node: "Node(id="JemPafQvoHsy", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING)". Cannot connect to host 10.0.0.239:2333 ssl:default [Connect call failed ('10.0.0.239', 2333)]
-Node Node(id="JemPafQvoHsy", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING) websocket was unable to connect, retrying connection in: "3.0814138404547853" seconds. 
-An error occurred connecting to node: "Node(id="JemPafQvoHsy", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING)". Cannot connect to host 10.0.0.239:2333 ssl:default [Connect call failed ('10.0.0.239', 2333)]
-Node Node(id="JemPafQvoHsy", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING) websocket was unable to connect, retrying connection in: "6.715701659491252" seconds. 
-An error occurred connecting to node: "Node(id="JemPafQvoHsy", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING)". Cannot connect to host 10.0.0.239:2333 ssl:default [Connect call failed ('10.0.0.239', 2333)]
-Node Node(id="JemPafQvoHsy", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING) websocket was unable to connect, retrying connection in: "28.31971629009909" seconds. 
+An error occurred connecting to node: "Node(id="gp6laco2W4Od", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING)". Cannot connect to host 10.0.0.239:2333 ssl:default [Connect call failed ('10.0.0.239', 2333)]
+Node Node(id="gp6laco2W4Od", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING) websocket was unable to connect, retrying connection in: "0.6312960994793466" seconds. 
+An error occurred connecting to node: "Node(id="gp6laco2W4Od", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING)". Cannot connect to host 10.0.0.239:2333 ssl:default [Connect call failed ('10.0.0.239', 2333)]
+Node Node(id="gp6laco2W4Od", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING) websocket was unable to connect, retrying connection in: "3.8250125303721365" seconds. 
+An error occurred connecting to node: "Node(id="gp6laco2W4Od", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING)". Cannot connect to host 10.0.0.239:2333 ssl:default [Connect call failed ('10.0.0.239', 2333)]
+Node Node(id="gp6laco2W4Od", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING) websocket was unable to connect, retrying connection in: "16.22202869880729" seconds. 
 Connected successfully to: 10.0.0.239
-[2023-08-16 12:24:56] [ERROR   ] discord.ext.commands.bot: Ignoring exception in command skip
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 235, in wrapped
-    ret = await coro(*args, **kwargs)
-  File "/home/ubuntu/Athena/MusicWave.py", line 263, in _skip
-    await player.stop()
-  File "/home/ubuntu/.local/lib/python3.10/site-packages/wavelink/player.py", line 720, in stop
-    self.queue._loaded = None
-AttributeError: 'list' object has no attribute '_loaded'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/ubuntu/.local/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1350, in invoke
-    await ctx.command.invoke(ctx)
-  File "/home/ubuntu/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1029, in invoke
-    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
-  File "/home/ubuntu/.local/lib/python3.10/site-packages/discord/ext/commands/core.py", line 244, in wrapped
-    raise CommandInvokeError(exc) from exc
-discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'list' object has no attribute '_loaded'

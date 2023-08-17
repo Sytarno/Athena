@@ -66,13 +66,14 @@ BAR_ORIGINAL = "▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅�
 
 #------------
 class NewPlayer(wavelink.Player):
-    def __init__(self, bot, guild):
-        super().__init__(bot, guild)
+    def __init__(self, bot, channel):
+        super().__init__(bot, channel)
 
         self.text_channel = None
         self.now_playing_message = None
         self.paused = False
         self.queue.reset()
+        self.query_queue = []
 
         #self.mode = 'ytsearch'
         #self.validModes = {'default': 'ytsearch', 'youtube' : 'ytsearch', 'soundcloud': 'scsearch', 'url': ''}
@@ -156,26 +157,21 @@ class Music(commands.Cog):
     async def acquire_tracks(self, player):
         tracks = None
         
-        query = player.queue.get()
-        #regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
-        #url = re.findall(regex, query)  
-
+        query = player.query_queue.pop(0)
         
-        tracks = await self.bot.wavelink.get_tracks(query=f'{query}')
-   
-        '''
-        if player.mode == 'scsearch':
-            tracks = await self.bot.wavelink.SoundCloudTrack.search(query)
-        if player.mode == 'ytsearch':
-            tracks = await self.bot.wavelink.YouTubeTrack.search(query)
-        if player.mode == '':
-            tracks = await self.bot.wavelink.SearchableTrack.search(query)
-        '''
+        decoded = spotify.decode_url(query)
+        if not decoded or decoded['type'] is not spotify.SpotifySearchType.track:
+            pass
 
-        if(type(tracks) == wavelink.player.TrackPlaylist):
-            return tracks.tracks[0], query
-        else:
-            return tracks[0], query
+        tracks = await wavelink.YouTubeTrack.search(f'{query}')
+        #print(tracks)
+
+        #if(type(tracks) == wavelink.player.TrackPlaylist):
+        #    return tracks.tracks[0], query
+        #else:
+        #    return tracks[0], query
+
+        return tracks[0], query
 
     @commands.command(name='connect', aliases=["join", "summon"])
     async def _connect(self, ctx, *, channel: discord.VoiceChannel=None):
@@ -188,9 +184,10 @@ class Music(commands.Cog):
         if channel:
             player = self.mainNode.get_player(ctx.guild.id)
             if not player:
-                player = NewPlayer(self.bot, ctx.guild)
+                player = NewPlayer(self.bot, channel)
 
             player.text_channel = ctx.channel
+            player.channel = channel
             return await channel.connect(cls=NewPlayer)
 
     @commands.command(name='stop', aliases=["dc", "leave"])
@@ -206,24 +203,14 @@ class Music(commands.Cog):
         player = self.mainNode.get_player(ctx.guild.id)
 
         if not player:
-            await ctx.invoke(self._connect)
+            player = await ctx.invoke(self._connect)
 
-        if player.is_playing:        
+        if player.is_playing():        
             await ctx.send(embed=generateEmbed(ctx, '', f"Enqueued the query '*{query}*'. [{ctx.author.mention}]"))
 
-        #Check if it is a spotify link
-        spot = re.findall(r"[\bhttps://open.\b]*spotify[\b.com\b]*[/:]*track[/:]*[A-Za-z0-9?=]+", query)
-        if(spot):
-            try:
-                t = player.sp.track(query)
-                player.queue.append(f"{t['artists'][0]['name']} {t['name']}")
-                
-            except:
-                pass
-        else:
-            player.queue.append(query)
+        player.query_queue.append(query)
 
-        if not player.is_playing:
+        if not player.is_playing():
             await self.coroutinePlay(player)     
           
     @commands.command(name='queue', aliases = ["q"])
@@ -327,11 +314,9 @@ class Music(commands.Cog):
                 highlight = BAR_ORIGINAL[:c]
                 nonhighlight = BAR_ORIGINAL[c:]
 
-                #uri = player.current.uri.replace("https://www.youtube.com/watch?v=", "")
                 uri = get_id(player.current.uri)
             
                 e = discord.Embed(title = 'Currently playing:',
-                                                    thumbnail = f'https://img.youtube.com/vi/{uri}/maxresdefault.jpg',
                                                     description = f'```css\n{player.current.title}\n```\n\n',
                                                     colour = 1973790)
 
@@ -347,7 +332,10 @@ class Music(commands.Cog):
                 e.add_field(name = f'{timeGet(secIn)} | {timeGet(secLen)}', value = f'{FULL[:cur] + "[●](https://www.youtube.com/watch?v=dQw4w9WgXcQ)" + FULL[1+cur:]}')
                 e.add_field(name = f'**Volume**', value = f'[{highlight}](https://www.youtube.com/watch?v=dQw4w9WgXcQ){nonhighlight}', inline=False)
                 e.add_field(name = '**Filter**', value = f'wavelink.eqs.Equalizer.{player.filter}()\n', inline=False)
-                e.set_thumbnail(url=f'https://img.youtube.com/vi/{uri}/maxresdefault.jpg')
+                
+                if isinstance((player.current, wavelink.YoutubeTrack)) or isinstance((player.current, wavelink.YoutubeMusicTrack)):
+                    thumb = await player.current.fetch_thumbnail()
+                    e.set_thumbnail(url=f'{thumb}')
 
                 await ctx.send(embed=e)  
             else:
@@ -422,49 +410,60 @@ class Music(commands.Cog):
     
     async def coroutinePlay(self, player):
     
-        tracks = None
+        track = None
 
-        while tracks == None:
-            tracks, query = await self.acquire_tracks(player)
+        while track == None:
+            track, query = await self.acquire_tracks(player)
 
-            if not tracks:
+            if not track:
                 return await player.send(embed=discord.Embed(description = f"Could not find any songs with the query '*{query}*'. Skipping.",
                                                   colour = 1973790))
                 pass
         
-        #player.current = tracks
-        await player.play(player.current)
+        await player.play(track)
     
-    async def on_node_event(self, event):
-        print("event:", event)
-        if isinstance(event, wavelink.events.TrackEnd):
-            player = event.player
-            track = player.current
+    @commands.Cog.listener()
+    async def on_wavelink_track_event(self, payload):
+        event = payload.event
+        player = payload.player
+        track = player.current
 
-            if len(player.queue) > 0:
-                await self.coroutinePlay(player)
-            else:
-                player.disconnect_task = asyncio.create_task(self.await_disconnect(player))
-                await player.disconnect_task
-
-        if isinstance(event, wavelink.events.TrackStart):
-            player = event.player
-            track = player.current
-
-            if(player.disconnect_task):
-                player.disconnect_task.cancel()
-
-            print(f'Playing a song in {player.guild_id}: {track.title}')
-
-            await self.send_song_info(player, track)
-
-        if isinstance(event, wavelink.events.TrackException):
-            player = event.player
-            track = player.current
-            error = event.error
+        print("event")
+        
+        error = event.reason
             
-            await player.send(embed=discord.Embed(description = f'Error while attempting to play ```css\n{track} : {error}\n```',
-                                                  colour = 1973790))
+        #await player.send(embed=discord.Embed(description = f'Error while attempting to play ```css\n{track} : {error}\n```',
+        #                                          colour = 1973790))
+    
+    @commands.Cog.listener()
+    async def on_wavelink_track_end(self, payload):
+        print("trackend")
+
+        event = payload.event
+        player = payload.player
+        track = player.current
+
+        if len(player.query_queue) > 0:
+            await self.coroutinePlay(player)
+        else:
+            player.disconnect_task = asyncio.create_task(self.await_disconnect(player))
+            await player.disconnect_task
+
+    @commands.Cog.listener()
+    async def on_wavelink_track_start(self, payload):
+        print("trackstart")
+
+        event = payload.event
+        player = payload.player
+        track = player.current
+
+        if(player.disconnect_task):
+            player.disconnect_task.cancel()
+
+        print(f'Playing a song in {player.guild.id}, {player.guild.name}: {track.title}')
+
+        await self.send_song_info(player, track)
+
             
             
         
