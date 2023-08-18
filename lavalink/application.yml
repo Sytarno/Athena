@@ -2,7 +2,7 @@ server: # REST and WS server
   port: 2333
   #port: 7777
   #address: 192.168.137.1
-  address: 10.0.0.239
+  address: 10.0.0.75
 lavalink:
   server:
     password: "youshallnotpass"

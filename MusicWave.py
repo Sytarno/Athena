@@ -66,8 +66,8 @@ BAR_ORIGINAL = "▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅�
 
 #------------
 class NewPlayer(wavelink.Player):
-    def __init__(self, bot, channel):
-        super().__init__(bot, channel)
+    def __init__(self, bot, voice_channel):
+        super().__init__(bot, voice_channel)
 
         self.text_channel = None
         self.now_playing_message = None
@@ -93,10 +93,10 @@ class NewPlayer(wavelink.Player):
         if channel is None or not channel.permissions_for(channel.guild.me).send_messages:
             return
 
-        try:
-            msg = await channel.send(content=content, embed=embed, delete_after=delete_after)
-        except (discord.Forbidden, discord.NotFound):
-            pass
+        #try:
+        msg = await channel.send(content=content, embed=embed, delete_after=delete_after)
+        #except (discord.Forbidden, discord.NotFound):
+        #    pass
 
         if delete_np and self.now_playing_message:
             try:
@@ -126,7 +126,7 @@ class Music(commands.Cog):
         # Region should be a discord.py guild.region e.g sydney or us_central (Though this is not technically required)
         
         #ip = socket.gethostbyname(socket.gethostname())
-        ip = "10.0.0.239" #private ip of our vm
+        ip = "10.0.0.75" #private ip of our vm
                 
         self.mainNode = wavelink.Node(
                             uri=f'http://{ip}:2333',
@@ -171,7 +171,10 @@ class Music(commands.Cog):
         #else:
         #    return tracks[0], query
 
-        return tracks[0], query
+        if len(tracks):
+            return tracks[0], query
+        else:
+            return tracks, query
 
     @commands.command(name='connect', aliases=["join", "summon"])
     async def _connect(self, ctx, *, channel: discord.VoiceChannel=None):
@@ -184,17 +187,18 @@ class Music(commands.Cog):
         if channel:
             player = self.mainNode.get_player(ctx.guild.id)
             if not player:
-                player = NewPlayer(self.bot, channel)
+                player = await channel.connect(cls=NewPlayer)
+            else:
+                player.move_to(channel)
 
             player.text_channel = ctx.channel
-            player.channel = channel
-            return await channel.connect(cls=NewPlayer)
+            return player
 
     @commands.command(name='stop', aliases=["dc", "leave"])
     async def _disconnect(self, ctx, *, channel: discord.VoiceChannel=None):
         player = self.mainNode.get_player(ctx.guild.id)
-        if player.queue:
-            player.queue.reset()
+        if player.query_queue:
+            player.query_queue = []
             
         await player.disconnect()
 
@@ -218,7 +222,7 @@ class Music(commands.Cog):
         player = self.mainNode.get_player(ctx.guild.id)
 
         if await self.playerConnectedCheck(ctx):
-            ar = player.queue
+            ar = player.query_queue
             if len(ar) > 0:
                 out = ""
                 for x in range(0, len(ar)):
@@ -233,13 +237,13 @@ class Music(commands.Cog):
     async def _remove(self, ctx, arg=0):
         player = self.mainNode.get_player(ctx.guild.id)
         if await self.userConnectedCheck(ctx) and await self.playerConnectedCheck(ctx) and arg > 0:
-            await ctx.send(embed=generateEmbed(ctx, '', f'{player.queue.pop(arg-1)} at index **{arg}** was removed from the queue. [{ctx.author.mention}]')) 
+            await ctx.send(embed=generateEmbed(ctx, '', f'{player.query_queue.pop(arg-1)} at index **{arg}** was removed from the queue. [{ctx.author.mention}]')) 
 
     @commands.command(name='clear', aliases = ["c"])
     async def _clear(self, ctx):
         player = self.mainNode.get_player(ctx.guild.id)
         if await self.userConnectedCheck(ctx) and await self.playerConnectedCheck(ctx):
-            player.queue = []
+            player.query_queue = []
             await ctx.send(embed=generateEmbed(ctx, '', f'{ctx.author.mention} cleared the queue')) 
 
     @commands.command(name='skip', aliases = ["s"])
@@ -331,11 +335,13 @@ class Music(commands.Cog):
                 
                 e.add_field(name = f'{timeGet(secIn)} | {timeGet(secLen)}', value = f'{FULL[:cur] + "[●](https://www.youtube.com/watch?v=dQw4w9WgXcQ)" + FULL[1+cur:]}')
                 e.add_field(name = f'**Volume**', value = f'[{highlight}](https://www.youtube.com/watch?v=dQw4w9WgXcQ){nonhighlight}', inline=False)
-                e.add_field(name = '**Filter**', value = f'wavelink.eqs.Equalizer.{player.filter}()\n', inline=False)
+                #e.add_field(name = '**Filter**', value = f'wavelink.eqs.Equalizer.{player.filter}()\n', inline=False)
                 
-                if isinstance((player.current, wavelink.YoutubeTrack)) or isinstance((player.current, wavelink.YoutubeMusicTrack)):
+                try:
                     thumb = await player.current.fetch_thumbnail()
                     e.set_thumbnail(url=f'{thumb}')
+                except:
+                    pass
 
                 await ctx.send(embed=e)  
             else:
@@ -428,9 +434,9 @@ class Music(commands.Cog):
         player = payload.player
         track = player.current
 
-        print("event")
+        #print("event")
         
-        error = event.reason
+        #error = event.reason
             
         #await player.send(embed=discord.Embed(description = f'Error while attempting to play ```css\n{track} : {error}\n```',
         #                                          colour = 1973790))

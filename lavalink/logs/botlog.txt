@@ -1,10 +1,13 @@
-[2023-08-17 12:26:16] [INFO    ] discord.client: logging in using static token
-[2023-08-17 12:26:17] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 8ce4b56c4d63fe2c8a3b6638177f9079).
+[2023-08-18 02:03:45] [INFO    ] discord.client: logging in using static token
+[2023-08-18 02:03:46] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 4416cbeafedd3334b75c44a6d3ab4105).
+[2023-08-18 02:03:48] [ERROR   ] discord.ext.commands.bot: Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "p" is not found
 Athena#4320 is now Online.
-An error occurred connecting to node: "Node(id="gp6laco2W4Od", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING)". Cannot connect to host 10.0.0.239:2333 ssl:default [Connect call failed ('10.0.0.239', 2333)]
-Node Node(id="gp6laco2W4Od", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING) websocket was unable to connect, retrying connection in: "0.6312960994793466" seconds. 
-An error occurred connecting to node: "Node(id="gp6laco2W4Od", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING)". Cannot connect to host 10.0.0.239:2333 ssl:default [Connect call failed ('10.0.0.239', 2333)]
-Node Node(id="gp6laco2W4Od", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING) websocket was unable to connect, retrying connection in: "3.8250125303721365" seconds. 
-An error occurred connecting to node: "Node(id="gp6laco2W4Od", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING)". Cannot connect to host 10.0.0.239:2333 ssl:default [Connect call failed ('10.0.0.239', 2333)]
-Node Node(id="gp6laco2W4Od", uri="http://10.0.0.239:2333", status=NodeStatus.CONNECTING) websocket was unable to connect, retrying connection in: "16.22202869880729" seconds. 
-Connected successfully to: 10.0.0.239
+Connected successfully to: 10.0.0.75
+trackstart
+Playing a song in 800843827375898625, [P R E F A B  M I S S I N G]: aran - Scramble TANO*C
+trackend
+[2023-08-18 04:48:52] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 4416cbeafedd3334b75c44a6d3ab4105.
+[2023-08-18 06:42:59] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 4416cbeafedd3334b75c44a6d3ab4105.
+[2023-08-18 08:54:30] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 4416cbeafedd3334b75c44a6d3ab4105.
+[2023-08-18 11:06:05] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 4416cbeafedd3334b75c44a6d3ab4105.

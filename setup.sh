@@ -2,6 +2,7 @@
 
 echo "Attempting to install libraries"
 
+sudo apt-get update
 sudo apt install default-jre
 sudo apt install python3-pip
 
